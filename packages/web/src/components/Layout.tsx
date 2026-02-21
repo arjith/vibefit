@@ -20,7 +20,11 @@ export function Layout() {
     { to: '/', label: 'Home' },
     { to: '/exercises', label: 'Exercises' },
     { to: '/cardio', label: 'Cardio' },
-    ...(isAuth ? [{ to: '/routines', label: 'Routines' }] : []),
+    ...(isAuth ? [
+      { to: '/routines', label: 'Routines' },
+      { to: '/analytics', label: 'Analytics' },
+      { to: '/coach', label: 'Coach' },
+    ] : []),
   ];
 
   return (

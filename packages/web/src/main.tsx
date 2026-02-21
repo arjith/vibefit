@@ -4,7 +4,11 @@ import { Provider } from 'react-redux';
 import { BrowserRouter } from 'react-router-dom';
 import { store } from './store';
 import { App } from './App';
+import { registerSW, setupOfflineDetection } from './lib/pwa';
 import './styles/global.css';
+
+registerSW();
+setupOfflineDetection();
 
 ReactDOM.createRoot(document.getElementById('root')!).render(
   <React.StrictMode>

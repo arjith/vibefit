@@ -2,6 +2,8 @@ import { Router } from 'express';
 import { eq, and, gte, desc, sql, count } from 'drizzle-orm';
 import { db, schema } from '@vibefit/core';
 import { authenticate } from '../middleware/auth.js';
+import { getAdaptiveRecommendations } from '../services/adaptiveDifficulty.js';
+import { getUserAdherencePrediction } from '../services/adherencePrediction.js';
 
 export const analyticsRouter = Router();
 analyticsRouter.use(authenticate);
@@ -90,6 +92,28 @@ analyticsRouter.get('/summary', async (req, res, next) => {
         topExercises,
       },
     });
+  } catch (err) {
+    next(err);
+  }
+});
+
+// ─── GET /analytics/difficulty ──────────────────────────────
+// Adaptive difficulty recommendations based on RPE trends
+analyticsRouter.get('/difficulty', async (req, res, next) => {
+  try {
+    const result = await getAdaptiveRecommendations(req.userId!);
+    res.json({ success: true, data: result });
+  } catch (err) {
+    next(err);
+  }
+});
+
+// ─── GET /analytics/adherence ───────────────────────────────
+// LSTM/heuristic adherence prediction
+analyticsRouter.get('/adherence', async (req, res, next) => {
+  try {
+    const prediction = await getUserAdherencePrediction(req.userId!);
+    res.json({ success: true, data: prediction });
   } catch (err) {
     next(err);
   }

@@ -17,6 +17,8 @@ import { streakRouter } from './routes/streaks.js';
 import { achievementRouter } from './routes/achievements.js';
 import { analyticsRouter } from './routes/analytics.js';
 import { recapRouter } from './routes/recaps.js';
+import { coachRouter } from './routes/coach.js';
+import { subscriptionRouter } from './routes/subscription.js';
 
 const app = express();
 const PORT = parseInt(process.env.PORT ?? '8001', 10);
@@ -53,6 +55,8 @@ app.use('/api/streaks', streakRouter);
 app.use('/api/achievements', achievementRouter);
 app.use('/api/analytics', analyticsRouter);
 app.use('/api/recaps', recapRouter);
+app.use('/api/coach', coachRouter);
+app.use('/api/subscription', subscriptionRouter);
 
 // ─── Error Handler (must be last) ───────────────────────────
 app.use(errorHandler);
