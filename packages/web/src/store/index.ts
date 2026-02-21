@@ -1,8 +1,11 @@
 import { configureStore } from '@reduxjs/toolkit';
+import authReducer from './authSlice';
+import exercisesReducer from './exercisesSlice';
 
 export const store = configureStore({
   reducer: {
-    // Slices will be added as features are built
+    auth: authReducer,
+    exercises: exercisesReducer,
   },
 });
 
