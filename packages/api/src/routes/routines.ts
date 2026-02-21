@@ -112,6 +112,79 @@ routineRouter.post('/preview', async (req, res, next) => {
   }
 });
 
+// Duplicate an existing routine
+routineRouter.post('/:id/duplicate', authenticate, async (req, res, next) => {
+  try {
+    const id = req.params.id as string;
+    const [routine] = await db.select()
+      .from(schema.routines)
+      .where(and(eq(schema.routines.id, id), eq(schema.routines.userId, req.userId!)))
+      .limit(1);
+
+    if (!routine) throw new AppError(404, 'NOT_FOUND', 'Routine not found');
+
+    // Clone the routine
+    const [newRoutine] = await db.insert(schema.routines).values({
+      userId: req.userId!,
+      name: `${routine.name} (Copy)`,
+      goal: routine.goal,
+      status: 'generated',
+      daysPerWeek: routine.daysPerWeek,
+      sessionDurationMin: routine.sessionDurationMin,
+      fitnessLevel: routine.fitnessLevel,
+      availableEquipment: routine.availableEquipment,
+      totalWeeks: routine.totalWeeks,
+      currentWeek: 1,
+    }).returning();
+
+    // Clone weeks → days → exercises
+    const weeks = await db.select().from(schema.routineWeeks)
+      .where(eq(schema.routineWeeks.routineId, id));
+
+    for (const week of weeks) {
+      const [newWeek] = await db.insert(schema.routineWeeks).values({
+        routineId: newRoutine.id,
+        weekNumber: week.weekNumber,
+        isDeload: week.isDeload,
+      }).returning();
+
+      const days = await db.select().from(schema.routineDays)
+        .where(eq(schema.routineDays.weekId, week.id));
+
+      for (const day of days) {
+        const [newDay] = await db.insert(schema.routineDays).values({
+          weekId: newWeek.id,
+          dayNumber: day.dayNumber,
+          focus: day.focus,
+          isRestDay: day.isRestDay,
+        }).returning();
+
+        const exercises = await db.select().from(schema.routineExercises)
+          .where(eq(schema.routineExercises.dayId, day.id));
+
+        if (exercises.length > 0) {
+          await db.insert(schema.routineExercises).values(
+            exercises.map((ex) => ({
+              dayId: newDay.id,
+              exerciseId: ex.exerciseId,
+              order: ex.order,
+              sets: ex.sets,
+              reps: ex.reps,
+              restSeconds: ex.restSeconds,
+              targetWeight: ex.targetWeight,
+              alternateIds: ex.alternateIds,
+            }))
+          );
+        }
+      }
+    }
+
+    res.status(201).json({ success: true, data: newRoutine });
+  } catch (err) {
+    next(err);
+  }
+});
+
 // Generate: preview + persist to DB (auth required)
 routineRouter.post('/generate', authenticate, async (req, res, next) => {
   try {

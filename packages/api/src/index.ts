@@ -13,6 +13,10 @@ import { cardioRouter } from './routes/cardio.js';
 import { routineRouter } from './routes/routines.js';
 import { profileRouter } from './routes/profile.js';
 import { workoutRouter } from './routes/workouts.js';
+import { streakRouter } from './routes/streaks.js';
+import { achievementRouter } from './routes/achievements.js';
+import { analyticsRouter } from './routes/analytics.js';
+import { recapRouter } from './routes/recaps.js';
 
 const app = express();
 const PORT = parseInt(process.env.PORT ?? '8001', 10);
@@ -45,6 +49,10 @@ app.use('/api/cardio', cardioRouter);
 app.use('/api/routines', routineRouter);
 app.use('/api/profile', profileRouter);
 app.use('/api/workouts', workoutRouter);
+app.use('/api/streaks', streakRouter);
+app.use('/api/achievements', achievementRouter);
+app.use('/api/analytics', analyticsRouter);
+app.use('/api/recaps', recapRouter);
 
 // ─── Error Handler (must be last) ───────────────────────────
 app.use(errorHandler);

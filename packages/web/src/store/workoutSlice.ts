@@ -1,5 +1,14 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import { api } from '../lib/api';
+import { addToast } from './toastSlice';
+import { setStreak } from './streakSlice';
+
+interface PersonalRecord {
+  exerciseId: string;
+  type: 'weight' | 'reps';
+  previousBest: number | null;
+  newBest: number;
+}
 
 interface WorkoutSet {
   id: string;
@@ -77,11 +86,26 @@ export const startWorkout = createAsyncThunk(
 
 export const logSet = createAsyncThunk(
   'workout/logSet',
-  async (payload: { sessionId: string; exerciseId: string; setNumber: number; weight: number; reps: number; rpe?: number; isWarmup?: boolean; isDropSet?: boolean }, { rejectWithValue }) => {
+  async (payload: { sessionId: string; exerciseId: string; setNumber: number; weight: number; reps: number; rpe?: number; isWarmup?: boolean; isDropSet?: boolean }, { dispatch, rejectWithValue }) => {
     try {
       const { sessionId, ...body } = payload;
       const { data } = await api.post(`/workouts/${sessionId}/sets`, body);
-      return data.data as WorkoutSet;
+      const { set, personalRecords } = data.data as { set: WorkoutSet; personalRecords: PersonalRecord[] };
+
+      // Fire PR toasts
+      for (const pr of personalRecords ?? []) {
+        dispatch(addToast({
+          type: 'pr',
+          title: pr.type === 'weight' ? 'New Weight PR!' : 'New Reps PR!',
+          message: pr.previousBest != null
+            ? `${pr.previousBest} → ${pr.newBest} ${pr.type === 'weight' ? 'lbs' : 'reps'}`
+            : `First record: ${pr.newBest} ${pr.type === 'weight' ? 'lbs' : 'reps'}`,
+          emoji: '🔥',
+          duration: 6000,
+        }));
+      }
+
+      return set;
     } catch (err: any) {
       return rejectWithValue(err.response?.data?.error?.message ?? 'Failed to log set');
     }
@@ -108,11 +132,44 @@ export const resumeWorkout = createAsyncThunk('workout/resume', async (sessionId
 
 export const completeWorkout = createAsyncThunk(
   'workout/complete',
-  async (payload: { sessionId: string; rpe?: number; mood?: number; notes?: string; totalDurationSec: number }, { rejectWithValue }) => {
+  async (payload: { sessionId: string; rpe?: number; mood?: number; notes?: string; totalDurationSec: number }, { dispatch, rejectWithValue }) => {
     try {
       const { sessionId, ...body } = payload;
       const { data } = await api.put(`/workouts/${sessionId}/complete`, body);
-      return data.data as WorkoutSession;
+      const { session, streak, milestoneReached, achievements } = data.data;
+
+      // Update streak in store
+      if (streak) dispatch(setStreak(streak));
+
+      // Achievement unlock toasts
+      for (const ach of achievements ?? []) {
+        dispatch(addToast({
+          type: 'achievement',
+          title: `Achievement Unlocked: ${ach.name}`,
+          message: ach.description,
+          emoji: '🏆',
+          duration: 8000,
+        }));
+      }
+
+      // Streak milestone toast
+      if (milestoneReached) {
+        dispatch(addToast({
+          type: 'achievement',
+          title: `🔥 ${milestoneReached.days}-Day Streak!`,
+          message: `${milestoneReached.tier.charAt(0).toUpperCase() + milestoneReached.tier.slice(1)} milestone reached!`,
+          duration: 8000,
+        }));
+      }
+
+      // Completion toast
+      dispatch(addToast({
+        type: 'success',
+        title: 'Workout Complete!',
+        message: streak ? `Current streak: ${streak.currentStreak} days` : undefined,
+      }));
+
+      return session as WorkoutSession;
     } catch (err: any) {
       return rejectWithValue(err.response?.data?.error?.message ?? 'Failed to complete workout');
     }

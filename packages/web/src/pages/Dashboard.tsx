@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useAppSelector, useAppDispatch } from '../hooks/useRedux';
 import { fetchProfile } from '../store/profileSlice';
 import { fetchSessions } from '../store/workoutSlice';
+import { fetchStreak, useStreakFreeze } from '../store/streakSlice';
 import { api } from '../lib/api';
 
 interface DashboardStats {
@@ -17,6 +18,7 @@ export function Dashboard() {
   const user = useAppSelector((s) => s.auth.user);
   const profile = useAppSelector((s) => s.profile.profile);
   const sessions = useAppSelector((s) => s.workout.sessions);
+  const streakData = useAppSelector((s) => s.streak.data);
   const dispatch = useAppDispatch();
   const [stats, setStats] = useState<DashboardStats | null>(null);
   const [loading, setLoading] = useState(true);
@@ -25,6 +27,7 @@ export function Dashboard() {
   useEffect(() => {
     dispatch(fetchProfile());
     dispatch(fetchSessions());
+    dispatch(fetchStreak());
   }, [dispatch]);
 
   // Redirect to onboarding if not completed
@@ -42,16 +45,16 @@ export function Dashboard() {
         ]);
         setStats({
           totalWorkouts: sessions.filter((s) => s.status === 'completed').length,
-          currentStreak: 0,
-          longestStreak: 0,
+          currentStreak: streakData?.currentStreak ?? 0,
+          longestStreak: streakData?.longestStreak ?? 0,
           totalExercises: 64,
           recentRoutines: (routinesRes.data.data ?? []).slice(0, 3),
         });
       } catch {
         setStats({
           totalWorkouts: sessions.filter((s) => s.status === 'completed').length,
-          currentStreak: 0,
-          longestStreak: 0,
+          currentStreak: streakData?.currentStreak ?? 0,
+          longestStreak: streakData?.longestStreak ?? 0,
           totalExercises: 64,
           recentRoutines: [],
         });
@@ -60,7 +63,7 @@ export function Dashboard() {
       }
     }
     loadDashboard();
-  }, [sessions]);
+  }, [sessions, streakData]);
 
   const greeting = getGreeting();
 
@@ -123,6 +126,22 @@ export function Dashboard() {
         </div>
       </div>
 
+      {/* Streak Widget */}
+      {streakData && streakData.currentStreak > 0 && (
+        <div className="streak-widget">
+          <span className="streak-fire">🔥</span>
+          <div className="streak-info">
+            <h3>{streakData.currentStreak} Day Streak</h3>
+            <p>Best: {streakData.longestStreak} days &middot; {streakData.freezesAvailable} freeze{streakData.freezesAvailable !== 1 ? 's' : ''} left</p>
+          </div>
+          {streakData.freezesAvailable > 0 && (
+            <button className="streak-freeze-btn" onClick={() => dispatch(useStreakFreeze())}>
+              ❄️ Use Freeze
+            </button>
+          )}
+        </div>
+      )}
+
       {/* Quick Actions */}
       <section className="vf-dashboard-section">
         <h2>Quick Actions</h2>
@@ -141,6 +160,11 @@ export function Dashboard() {
             <span className="vf-action-card__icon">🏃</span>
             <span className="vf-action-card__label">Cardio Library</span>
             <span className="vf-action-card__desc">37 cardio activities</span>
+          </Link>
+          <Link to="/achievements" className="vf-action-card">
+            <span className="vf-action-card__icon">🏆</span>
+            <span className="vf-action-card__label">Achievements</span>
+            <span className="vf-action-card__desc">Track your milestones</span>
           </Link>
         </div>
       </section>

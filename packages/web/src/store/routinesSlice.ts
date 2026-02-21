@@ -146,6 +146,18 @@ export const deleteRoutine = createAsyncThunk(
   }
 );
 
+export const duplicateRoutine = createAsyncThunk(
+  'routines/duplicate',
+  async (id: string, { rejectWithValue }) => {
+    try {
+      const { data } = await api.post(`/routines/${id}/duplicate`);
+      return data.data as SavedRoutine;
+    } catch (err: any) {
+      return rejectWithValue(err.response?.data?.error?.message ?? 'Failed to duplicate routine');
+    }
+  }
+);
+
 // ─── Slice ───────────────────────────────────────────────────
 const routinesSlice = createSlice({
   name: 'routines',
@@ -179,6 +191,11 @@ const routinesSlice = createSlice({
     builder.addCase(deleteRoutine.fulfilled, (state, action) => {
       state.list = state.list.filter((r) => r.id !== action.payload);
       if (state.selected?.id === action.payload) state.selected = null;
+    });
+
+    // Duplicate
+    builder.addCase(duplicateRoutine.fulfilled, (state, action) => {
+      state.list.push(action.payload);
     });
   },
 });

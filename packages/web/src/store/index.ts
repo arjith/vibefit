@@ -5,6 +5,9 @@ import cardioReducer from './cardioSlice';
 import routinesReducer from './routinesSlice';
 import profileReducer from './profileSlice';
 import workoutReducer from './workoutSlice';
+import toastReducer from './toastSlice';
+import streakReducer from './streakSlice';
+import { achievementsPageReducer } from '../pages/Achievements';
 
 export const store = configureStore({
   reducer: {
@@ -14,6 +17,9 @@ export const store = configureStore({
     routines: routinesReducer,
     profile: profileReducer,
     workout: workoutReducer,
+    toast: toastReducer,
+    streak: streakReducer,
+    _achievementsPage: achievementsPageReducer,
   },
 });
 

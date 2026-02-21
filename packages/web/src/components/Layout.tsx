@@ -2,6 +2,7 @@ import { Outlet, NavLink, useNavigate } from 'react-router-dom';
 import { useAppSelector, useAppDispatch } from '../hooks/useRedux';
 import { logout } from '../store/authSlice';
 import { useState } from 'react';
+import ToastContainer from './ToastContainer';
 
 export function Layout() {
   const { user, status } = useAppSelector((s) => s.auth);
@@ -75,6 +76,8 @@ export function Layout() {
       <main className="vf-main">
         <Outlet />
       </main>
+
+      <ToastContainer />
     </div>
   );
 }

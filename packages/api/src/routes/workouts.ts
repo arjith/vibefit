@@ -4,6 +4,9 @@ import { eq, and, desc } from 'drizzle-orm';
 import { db, schema } from '@vibefit/core';
 import { authenticate } from '../middleware/auth.js';
 import { AppError } from '../middleware/errorHandler.js';
+import { detectPersonalRecords } from '../services/prDetector.js';
+import { updateStreakOnComplete } from './streaks.js';
+import { checkAchievements } from '../services/achievementChecker.js';
 
 export const workoutRouter = Router();
 workoutRouter.use(authenticate);
@@ -138,7 +141,12 @@ workoutRouter.post('/:id/sets', async (req, res, next) => {
       isDropSet: body.isDropSet ?? false,
     }).returning();
 
-    res.status(201).json({ success: true, data: set });
+    // Detect personal records (skip warmup sets)
+    const prs = body.isWarmup
+      ? []
+      : await detectPersonalRecords(req.userId!, body.exerciseId, body.weight, body.reps);
+
+    res.status(201).json({ success: true, data: { set, personalRecords: prs } });
   } catch (err) {
     next(err);
   }
@@ -224,7 +232,21 @@ workoutRouter.put('/:id/complete', async (req, res, next) => {
       throw new AppError(404, 'NOT_FOUND', 'Session not found');
     }
 
-    res.json({ success: true, data: updated });
+    // Update streak
+    const streakResult = await updateStreakOnComplete(req.userId!);
+
+    // Check achievements
+    const newAchievements = await checkAchievements(req.userId!);
+
+    res.json({
+      success: true,
+      data: {
+        session: updated,
+        streak: streakResult.streak,
+        milestoneReached: streakResult.milestoneReached ?? null,
+        achievements: newAchievements,
+      },
+    });
   } catch (err) {
     next(err);
   }

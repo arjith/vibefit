@@ -2,6 +2,8 @@ import { Router } from 'express';
 import { eq, ilike, and, count } from 'drizzle-orm';
 import { db, schema } from '@vibefit/core';
 import { AppError } from '../middleware/errorHandler.js';
+import { findSubstitutions } from '../services/biomechSubstitution.js';
+import { getFormCues } from '../services/formCueEngine.js';
 
 export const exerciseRouter = Router();
 
@@ -55,6 +57,34 @@ exerciseRouter.get('/:id', async (req, res, next) => {
     }
 
     res.json({ success: true, data: exercise });
+  } catch (err) {
+    next(err);
+  }
+});
+
+// ─── GET /exercises/:id/substitutions ────────────────────────
+// Find biomechanically compatible alternatives
+exerciseRouter.get('/:id/substitutions', async (req, res, next) => {
+  try {
+    const id = req.params.id as string;
+    const injuries = typeof req.query.injuries === 'string'
+      ? req.query.injuries.split(',').map((s) => s.trim()).filter(Boolean)
+      : [];
+
+    const subs = await findSubstitutions(id, injuries, 5);
+    res.json({ success: true, data: subs });
+  } catch (err) {
+    next(err);
+  }
+});
+
+// ─── GET /exercises/:id/form-cues ────────────────────────────
+// Get form cues and coaching tips based on biomech profile
+exerciseRouter.get('/:id/form-cues', async (req, res, next) => {
+  try {
+    const id = req.params.id as string;
+    const result = await getFormCues(id);
+    res.json({ success: true, data: result });
   } catch (err) {
     next(err);
   }

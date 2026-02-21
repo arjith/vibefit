@@ -14,6 +14,9 @@ import { Routines } from './pages/Routines';
 import { RoutineDetail } from './pages/RoutineDetail';
 import { Onboarding } from './pages/Onboarding';
 import { WorkoutExecution } from './pages/WorkoutExecution';
+import { Achievements } from './pages/Achievements';
+import { Analytics } from './pages/Analytics';
+import { Recaps } from './pages/Recaps';
 
 function RequireAuth({ children }: { children: React.ReactNode }) {
   const status = useAppSelector((s) => s.auth.status);
@@ -46,6 +49,9 @@ export function App() {
         <Route path="/routines/:id" element={<RequireAuth><RoutineDetail /></RequireAuth>} />
         <Route path="/onboarding" element={<RequireAuth><Onboarding /></RequireAuth>} />
         <Route path="/workout/:routineId" element={<RequireAuth><WorkoutExecution /></RequireAuth>} />
+        <Route path="/achievements" element={<RequireAuth><Achievements /></RequireAuth>} />
+        <Route path="/analytics" element={<RequireAuth><Analytics /></RequireAuth>} />
+        <Route path="/recaps" element={<RequireAuth><Recaps /></RequireAuth>} />
       </Route>
     </Routes>
   );

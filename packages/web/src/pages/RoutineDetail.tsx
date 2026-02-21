@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import { useAppDispatch, useAppSelector } from '../hooks/useRedux';
-import { fetchRoutineById, deleteRoutine, clearSelectedRoutine } from '../store/routinesSlice';
+import { fetchRoutineById, deleteRoutine, duplicateRoutine, clearSelectedRoutine } from '../store/routinesSlice';
 
 const goalEmojis: Record<string, string> = {
   'muscle-building': '💪',
@@ -35,6 +35,21 @@ export function RoutineDetail() {
       dispatch(deleteRoutine(routine.id));
       navigate('/routines');
     }
+  };
+
+  const handleDuplicate = async () => {
+    if (!routine) return;
+    const result = await dispatch(duplicateRoutine(routine.id));
+    if (duplicateRoutine.fulfilled.match(result)) {
+      navigate(`/routines/${(result.payload as any).id}`);
+    }
+  };
+
+  const handleStartWorkout = () => {
+    if (!routine) return;
+    const week = activeWeek + 1;
+    const day = currentWeekData?.days?.[0]?.dayNumber ?? 1;
+    navigate(`/workout/${routine.id}?week=${week}&day=${day}`);
   };
 
   if (!routine) {
@@ -140,6 +155,8 @@ export function RoutineDetail() {
 
       {/* Actions */}
       <div className="routine-detail__actions">
+        <button className="vf-btn vf-btn--primary" onClick={handleStartWorkout}>▶ Start Workout</button>
+        <button className="vf-btn vf-btn--ghost" onClick={handleDuplicate}>📋 Duplicate</button>
         <button className="vf-btn vf-btn--ghost vf-btn--danger" onClick={handleDelete}>Delete Routine</button>
       </div>
     </div>
