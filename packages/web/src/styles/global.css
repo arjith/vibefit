@@ -1111,3 +1111,130 @@ a:hover {
   color: var(--pulse-text-muted);
   line-height: 1.5;
 }
+
+/* ─── Cardio Page ─────────────────────────────────────────── */
+
+.vf-cardio-page__header {
+  display: flex;
+  align-items: baseline;
+  gap: var(--pulse-space-3);
+  margin-bottom: var(--pulse-space-4);
+}
+
+.vf-cardio-page__header h1 {
+  font-size: 1.75rem;
+  font-weight: 700;
+}
+
+.vf-cardio-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: var(--pulse-space-3);
+}
+
+.vf-cardio-card {
+  background: var(--pulse-bg-elevated);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: var(--pulse-radius-md);
+  overflow: hidden;
+  transition: all var(--pulse-duration-normal) var(--pulse-ease);
+}
+
+.vf-cardio-card:hover {
+  border-color: rgba(158, 253, 56, 0.2);
+  transform: translateY(-2px);
+  box-shadow: var(--pulse-shadow-md);
+}
+
+.vf-cardio-card--link {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+
+.vf-cardio-card--link:hover {
+  text-decoration: none;
+}
+
+.vf-cardio-card--skeleton {
+  pointer-events: none;
+}
+
+.vf-cardio-card__image {
+  aspect-ratio: 16 / 10;
+  background: var(--pulse-bg-surface);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.vf-cardio-card__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.vf-cardio-card__placeholder {
+  font-size: 2.5rem;
+  opacity: 0.3;
+}
+
+.vf-cardio-card__body {
+  padding: var(--pulse-space-3);
+}
+
+.vf-cardio-card__name {
+  font-size: 0.9375rem;
+  font-weight: 600;
+  margin-bottom: var(--pulse-space-2);
+  line-height: 1.4;
+}
+
+.vf-cardio-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--pulse-space-1);
+  margin-bottom: var(--pulse-space-2);
+}
+
+.vf-cardio-card__stats {
+  display: flex;
+  gap: var(--pulse-space-3);
+  font-size: 0.75rem;
+  color: var(--pulse-text-muted);
+}
+
+/* Cardio Detail Stats */
+.vf-cardio-stats {
+  display: flex;
+  gap: var(--pulse-space-4);
+  margin-top: var(--pulse-space-3);
+  padding-top: var(--pulse-space-3);
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.vf-cardio-stat {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.vf-cardio-stat__value {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+.vf-cardio-stat__label {
+  font-size: 0.6875rem;
+  color: var(--pulse-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.vf-detail-text {
+  font-size: 0.9375rem;
+  color: var(--pulse-text-secondary);
+  line-height: 1.7;
+}

@@ -18,6 +18,7 @@ export function Layout() {
   const navLinks = [
     { to: '/', label: 'Home' },
     { to: '/exercises', label: 'Exercises' },
+    { to: '/cardio', label: 'Cardio' },
     ...(isAuth ? [{ to: '/routines', label: 'Routines' }] : []),
   ];
 

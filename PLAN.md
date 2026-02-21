@@ -1,6 +1,6 @@
 # VibeFit — Implementation Plan & Progress Tracker
 
-> **Status:** 🚧 IN PROGRESS — Phase 1 Core Loop in progress  
+> **Status:** 🚧 IN PROGRESS — Phase 1 Core Loop in progress — pushed to GitHub  
 > **Last Updated:** 2026-02-21  
 > **Framework:** Jobs-to-Be-Done (JTBD) × Entity State Machines  
 > **Architecture:** pnpm Monorepo → `@vibefit/{shared,ui,core,api,web,ml,agent}`
@@ -76,7 +76,7 @@ ERROR → retry (exp backoff: 1s→2s→4s, max 3) → LOADING
 | 1.4 | Routine management (calendar view, deep-link, delete confirm, duplicate) | ⬜ | 0.5,1.3 | URL `/routines/:id/week/2/day/3` works |
 | 1.5 | Workout execution (full-screen, set logging, rest timer, swap, auto-save) | ⬜ | 0.2,0.5,1.3 | Log sets → auto-save → timer → complete |
 | 1.6 | Cardio tracking (timer modes, effort logging, Surprise Me upgrade) | ⬜ | 0.2,0.5 | HIIT timer → work/rest → log RPE → save |
-| 1.7 | Dashboard (today's workout, streak, weekly progress, muscle map) | ⬜ | 0.5,1.5 | Shows data for 3+ workouts |
+| 1.7 | Dashboard (today's workout, streak, weekly progress, muscle map) | 🚧 | 0.5,1.5 | Shows data for 3+ workouts |
 
 ## Phase 2: Retention Engine (JTBD 4–5)
 
