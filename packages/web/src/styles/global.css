@@ -1,0 +1,144 @@
+/* ─── Pulse Design System — Global Styles ──────────────────── */
+
+:root {
+  /* Background */
+  --pulse-bg-primary: #050505;
+  --pulse-bg-elevated: #111111;
+  --pulse-bg-surface: #0d0d0d;
+  --pulse-bg-interactive: #1a1a1a;
+
+  /* Brand */
+  --pulse-green-500: #9EFD38;
+  --pulse-green-600: #7acc2d;
+  --pulse-gold-500: #C9A96E;
+
+  /* Semantic */
+  --pulse-red-500: #ff4444;
+  --pulse-amber-500: #ffaa00;
+  --pulse-blue-500: #4488ff;
+  --pulse-green-success: #00cc88;
+
+  /* Text */
+  --pulse-text-primary: #f0f0f0;
+  --pulse-text-secondary: #8a8a8a;
+  --pulse-text-muted: #555555;
+
+  /* Spacing */
+  --pulse-space-1: 4px;
+  --pulse-space-2: 8px;
+  --pulse-space-3: 16px;
+  --pulse-space-4: 24px;
+  --pulse-space-5: 32px;
+  --pulse-space-6: 48px;
+
+  /* Radius */
+  --pulse-radius-sm: 6px;
+  --pulse-radius-md: 10px;
+  --pulse-radius-lg: 16px;
+  --pulse-radius-xl: 24px;
+
+  /* Shadows */
+  --pulse-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.3);
+  --pulse-shadow-md: 0 4px 12px rgba(0, 0, 0, 0.4);
+  --pulse-shadow-lg: 0 8px 32px rgba(0, 0, 0, 0.5);
+
+  /* Motion */
+  --pulse-ease: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  --pulse-duration-fast: 150ms;
+  --pulse-duration-normal: 300ms;
+  --pulse-duration-slow: 500ms;
+
+  /* Focus */
+  --pulse-focus-ring: 0 0 0 2px var(--pulse-green-500);
+  --pulse-focus-offset: 2px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  background-color: var(--pulse-bg-primary);
+  color: var(--pulse-text-primary);
+  line-height: 1.6;
+  min-height: 100vh;
+}
+
+a {
+  color: var(--pulse-green-500);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Skip to content */
+.skip-to-content {
+  position: absolute;
+  top: -100%;
+  left: var(--pulse-space-3);
+  background: var(--pulse-green-500);
+  color: var(--pulse-bg-primary);
+  padding: var(--pulse-space-2) var(--pulse-space-3);
+  border-radius: var(--pulse-radius-sm);
+  font-weight: 600;
+  z-index: 9999;
+  transition: top var(--pulse-duration-fast) var(--pulse-ease);
+}
+
+.skip-to-content:focus {
+  top: var(--pulse-space-3);
+}
+
+/* Focus visible */
+:focus-visible {
+  outline: 2px solid var(--pulse-green-500);
+  outline-offset: var(--pulse-focus-offset);
+}
+
+/* Reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--pulse-bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--pulse-text-muted);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--pulse-text-secondary);
+}
+
+/* Selection */
+::selection {
+  background: var(--pulse-green-500);
+  color: var(--pulse-bg-primary);
+}
