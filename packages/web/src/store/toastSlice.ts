@@ -11,7 +11,7 @@ export interface Toast {
   duration?: number; // ms, default 5000
 }
 
-interface ToastState {
+export interface ToastState {
   toasts: Toast[];
 }
 

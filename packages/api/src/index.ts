@@ -19,6 +19,7 @@ import { analyticsRouter } from './routes/analytics.js';
 import { recapRouter } from './routes/recaps.js';
 import { coachRouter } from './routes/coach.js';
 import { subscriptionRouter } from './routes/subscription.js';
+import { socialRouter } from './routes/social.js';
 
 const app = express();
 const PORT = parseInt(process.env.PORT ?? '8001', 10);
@@ -26,7 +27,7 @@ const PORT = parseInt(process.env.PORT ?? '8001', 10);
 // ─── Security ────────────────────────────────────────────────
 app.use(helmet());
 app.use(cors({
-  origin: process.env.CORS_ORIGIN ?? 'http://localhost:3000',
+  origin: process.env.CORS_ORIGIN ?? ['http://localhost:3000', 'http://localhost:3001', 'http://localhost:3002'],
   credentials: true,
 }));
 app.use(rateLimit({
@@ -57,6 +58,7 @@ app.use('/api/analytics', analyticsRouter);
 app.use('/api/recaps', recapRouter);
 app.use('/api/coach', coachRouter);
 app.use('/api/subscription', subscriptionRouter);
+app.use('/api/social', socialRouter);
 
 // ─── Error Handler (must be last) ───────────────────────────
 app.use(errorHandler);

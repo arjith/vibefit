@@ -22,6 +22,7 @@ export function Layout() {
     { to: '/cardio', label: 'Cardio' },
     ...(isAuth ? [
       { to: '/routines', label: 'Routines' },
+      { to: '/social', label: 'Social' },
       { to: '/analytics', label: 'Analytics' },
       { to: '/coach', label: 'Coach' },
     ] : []),
@@ -30,18 +31,17 @@ export function Layout() {
   return (
     <div className="vf-layout">
       <header className="vf-header">
-        <div className="vf-header__inner">
           <NavLink to="/" className="vf-logo">
             <span className="vf-logo__icon">⚡</span>
             <span className="vf-logo__text">VibeFit</span>
           </NavLink>
 
-          <nav className={`vf-nav ${menuOpen ? 'vf-nav--open' : ''}`} aria-label="Main navigation">
+          <nav className={`vf-header__center ${menuOpen ? 'vf-header__center--open' : ''}`} aria-label="Main navigation">
             {navLinks.map((link) => (
               <NavLink
                 key={link.to}
                 to={link.to}
-                className={({ isActive }) => `vf-nav__link ${isActive ? 'vf-nav__link--active' : ''}`}
+                className={({ isActive }) => `vf-nav-link ${isActive ? 'vf-nav-link--active' : ''}`}
                 onClick={() => setMenuOpen(false)}
               >
                 {link.label}
@@ -49,7 +49,7 @@ export function Layout() {
             ))}
           </nav>
 
-          <div className="vf-header__actions">
+          <div className="vf-header__right">
             {isAuth ? (
               <div className="vf-header__user">
                 <span className="vf-header__name">{user?.name}</span>
@@ -74,7 +74,6 @@ export function Layout() {
               <span />
             </button>
           </div>
-        </div>
       </header>
 
       <main className="vf-main">

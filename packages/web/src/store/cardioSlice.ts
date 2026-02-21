@@ -28,7 +28,7 @@ interface CardioMeta {
   totalPages: number;
 }
 
-interface CardioState {
+export interface CardioState {
   items: CardioActivity[];
   selected: CardioActivity | null;
   filters: CardioFilters;

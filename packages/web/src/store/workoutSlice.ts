@@ -40,7 +40,7 @@ interface WorkoutSession {
   createdAt: string;
 }
 
-interface WorkoutState {
+export interface WorkoutState {
   sessions: WorkoutSession[];
   activeSession: WorkoutSession | null;
   status: 'idle' | 'loading' | 'loaded' | 'error';

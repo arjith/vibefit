@@ -1,35 +1,8 @@
 import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import { api } from '../lib/api';
+import type { Routine, RoutineWeek } from '@vibefit/shared';
 
-// ─── Types ───────────────────────────────────────────────────
-interface RoutineExercise {
-  exerciseId: string;
-  exerciseName: string;
-  muscleGroup: string;
-  equipment: string;
-  imageUrls: string[];
-  instructions: string[];
-  tips: string[];
-  sets: number;
-  reps: number;
-  restSeconds: number;
-  targetWeight: number | null;
-  order: number;
-  alternateIds: string[];
-}
-
-interface RoutineDay {
-  dayNumber: number;
-  focus: string;
-  isRestDay: boolean;
-  exercises: RoutineExercise[];
-}
-
-interface RoutineWeek {
-  weekNumber: number;
-  isDeload: boolean;
-  days: RoutineDay[];
-}
+type SavedRoutine = Routine;
 
 interface RoutinePreview {
   name: string;
@@ -42,22 +15,6 @@ interface RoutinePreview {
   weeks: RoutineWeek[];
 }
 
-interface SavedRoutine {
-  id: string;
-  name: string;
-  goal: string;
-  status: string;
-  daysPerWeek: number;
-  sessionDurationMin: number;
-  fitnessLevel: string;
-  availableEquipment: string[];
-  totalWeeks: number;
-  currentWeek: number;
-  createdAt: string;
-  updatedAt: string;
-  weeks?: RoutineWeek[];
-}
-
 export interface GenerateRequest {
   goal: string;
   daysPerWeek: number;
@@ -67,7 +24,7 @@ export interface GenerateRequest {
   totalWeeks?: number;
 }
 
-interface RoutinesState {
+export interface RoutinesState {
   list: SavedRoutine[];
   selected: SavedRoutine | null;
   preview: RoutinePreview | null;

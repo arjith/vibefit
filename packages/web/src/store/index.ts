@@ -7,6 +7,7 @@ import profileReducer from './profileSlice';
 import workoutReducer from './workoutSlice';
 import toastReducer from './toastSlice';
 import streakReducer from './streakSlice';
+import socialReducer from './socialSlice';
 import { achievementsPageReducer } from '../pages/Achievements';
 
 export const store = configureStore({
@@ -19,6 +20,7 @@ export const store = configureStore({
     workout: workoutReducer,
     toast: toastReducer,
     streak: streakReducer,
+    social: socialReducer,
     _achievementsPage: achievementsPageReducer,
   },
 });

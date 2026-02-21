@@ -269,7 +269,7 @@ export function Routines() {
                   {day.exercises.map((ex) => (
                     <div key={`${ex.exerciseId}-${ex.order}`} className="preview__exercise">
                       <div className="preview__exercise-thumb">
-                        {ex.imageUrls.length > 0 ? (
+                        {ex.imageUrls && ex.imageUrls.length > 0 ? (
                           <img src={ex.imageUrls[0]} alt={ex.exerciseName} />
                         ) : (
                           <div className="preview__exercise-placeholder">{ex.order}</div>

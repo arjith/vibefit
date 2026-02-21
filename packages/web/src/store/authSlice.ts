@@ -8,7 +8,7 @@ interface AuthUser {
   avatarUrl: string | null;
 }
 
-interface AuthState {
+export interface AuthState {
   user: AuthUser | null;
   status: 'idle' | 'loading' | 'authenticated' | 'error';
   error: string | null;

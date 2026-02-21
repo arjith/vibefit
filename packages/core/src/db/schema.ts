@@ -249,3 +249,106 @@ export const userChallenges = pgTable('user_challenges', {
 }, (table) => ({
   userChallengeIdx: uniqueIndex('user_challenge_unique_idx').on(table.userId, table.challengeId),
 }));
+
+// ─── Social: Follows ─────────────────────────────────────────
+export const follows = pgTable('follows', {
+  id: uuid('id').primaryKey().defaultRandom(),
+  followerId: uuid('follower_id').notNull().references(() => users.id, { onDelete: 'cascade' }),
+  followingId: uuid('following_id').notNull().references(() => users.id, { onDelete: 'cascade' }),
+  createdAt: timestamp('created_at', { withTimezone: true }).defaultNow().notNull(),
+}, (table) => ({
+  followUniqueIdx: uniqueIndex('follow_unique_idx').on(table.followerId, table.followingId),
+  followerIdx: index('follow_follower_idx').on(table.followerId),
+  followingIdx: index('follow_following_idx').on(table.followingId),
+}));
+
+// ─── Social: Feed Posts ──────────────────────────────────────
+export const feedPosts = pgTable('feed_posts', {
+  id: uuid('id').primaryKey().defaultRandom(),
+  userId: uuid('user_id').notNull().references(() => users.id, { onDelete: 'cascade' }),
+  type: varchar('type', { length: 30 }).notNull(), // workout_complete, pr, achievement, streak_milestone
+  content: text('content'),
+  metadata: jsonb('metadata').notNull().default({}),
+  visibility: varchar('visibility', { length: 20 }).notNull().default('followers'), // public, followers, private
+  createdAt: timestamp('created_at', { withTimezone: true }).defaultNow().notNull(),
+}, (table) => ({
+  feedUserIdx: index('feed_user_idx').on(table.userId),
+  feedCreatedIdx: index('feed_created_idx').on(table.createdAt),
+}));
+
+// ─── Social: Kudos (likes) ──────────────────────────────────
+export const kudos = pgTable('kudos', {
+  id: uuid('id').primaryKey().defaultRandom(),
+  postId: uuid('post_id').notNull().references(() => feedPosts.id, { onDelete: 'cascade' }),
+  userId: uuid('user_id').notNull().references(() => users.id, { onDelete: 'cascade' }),
+  createdAt: timestamp('created_at', { withTimezone: true }).defaultNow().notNull(),
+}, (table) => ({
+  kudosUniqueIdx: uniqueIndex('kudos_unique_idx').on(table.postId, table.userId),
+}));
+
+// ─── Social: Comments ────────────────────────────────────────
+export const comments = pgTable('comments', {
+  id: uuid('id').primaryKey().defaultRandom(),
+  postId: uuid('post_id').notNull().references(() => feedPosts.id, { onDelete: 'cascade' }),
+  userId: uuid('user_id').notNull().references(() => users.id, { onDelete: 'cascade' }),
+  content: text('content').notNull(),
+  createdAt: timestamp('created_at', { withTimezone: true }).defaultNow().notNull(),
+}, (table) => ({
+  commentPostIdx: index('comment_post_idx').on(table.postId),
+}));
+
+// ─── Coach Marketplace: Programs ─────────────────────────────
+export const coachPrograms = pgTable('coach_programs', {
+  id: uuid('id').primaryKey().defaultRandom(),
+  coachId: uuid('coach_id').notNull().references(() => users.id, { onDelete: 'cascade' }),
+  name: varchar('name', { length: 255 }).notNull(),
+  description: text('description').notNull(),
+  price: real('price').notNull(),
+  durationWeeks: integer('duration_weeks').notNull(),
+  difficulty: varchar('difficulty', { length: 20 }).notNull(),
+  category: varchar('category', { length: 50 }).notNull(),
+  rating: real('rating').notNull().default(0),
+  reviewCount: integer('review_count').notNull().default(0),
+  enrollmentCount: integer('enrollment_count').notNull().default(0),
+  isPublished: boolean('is_published').notNull().default(false),
+  routineId: uuid('routine_id').references(() => routines.id),
+  createdAt: timestamp('created_at', { withTimezone: true }).defaultNow().notNull(),
+  updatedAt: timestamp('updated_at', { withTimezone: true }).defaultNow().notNull(),
+}, (table) => ({
+  coachIdx: index('program_coach_idx').on(table.coachId),
+  categoryIdx: index('program_category_idx').on(table.category),
+}));
+
+// ─── Coach Marketplace: Reviews ──────────────────────────────
+export const programReviews = pgTable('program_reviews', {
+  id: uuid('id').primaryKey().defaultRandom(),
+  programId: uuid('program_id').notNull().references(() => coachPrograms.id, { onDelete: 'cascade' }),
+  userId: uuid('user_id').notNull().references(() => users.id, { onDelete: 'cascade' }),
+  rating: integer('rating').notNull(),
+  comment: text('comment'),
+  createdAt: timestamp('created_at', { withTimezone: true }).defaultNow().notNull(),
+}, (table) => ({
+  reviewUniqueIdx: uniqueIndex('review_unique_idx').on(table.programId, table.userId),
+}));
+
+// ─── Enterprise: Organizations ───────────────────────────────
+export const organizations = pgTable('organizations', {
+  id: uuid('id').primaryKey().defaultRandom(),
+  name: varchar('name', { length: 255 }).notNull(),
+  slug: varchar('slug', { length: 100 }).notNull().unique(),
+  plan: varchar('plan', { length: 20 }).notNull().default('enterprise'),
+  maxMembers: integer('max_members').notNull().default(100),
+  ssoProvider: varchar('sso_provider', { length: 50 }),
+  ssoDomain: varchar('sso_domain', { length: 255 }),
+  createdAt: timestamp('created_at', { withTimezone: true }).defaultNow().notNull(),
+});
+
+export const orgMembers = pgTable('org_members', {
+  id: uuid('id').primaryKey().defaultRandom(),
+  orgId: uuid('org_id').notNull().references(() => organizations.id, { onDelete: 'cascade' }),
+  userId: uuid('user_id').notNull().references(() => users.id, { onDelete: 'cascade' }),
+  role: varchar('role', { length: 20 }).notNull().default('member'), // admin, manager, member
+  joinedAt: timestamp('joined_at', { withTimezone: true }).defaultNow().notNull(),
+}, (table) => ({
+  orgMemberIdx: uniqueIndex('org_member_unique_idx').on(table.orgId, table.userId),
+}));

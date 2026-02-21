@@ -105,7 +105,7 @@ export function RoutineDetail() {
         <div className="routine-detail__week-tabs">
           {weeks.map((week, idx) => (
             <button
-              key={week.id ?? idx}
+              key={week.weekNumber}
               className={`routine-detail__week-tab ${idx === activeWeek ? 'active' : ''} ${week.isDeload ? 'deload' : ''}`}
               onClick={() => setActiveWeek(idx)}
             >
@@ -120,7 +120,7 @@ export function RoutineDetail() {
       {currentWeekData && (
         <div className="routine-detail__days">
           {currentWeekData.days.map((day) => (
-            <div key={day.id ?? day.dayNumber} className={`routine-detail__day ${day.completed ? 'completed' : ''}`}>
+            <div key={day.dayNumber} className={`routine-detail__day ${day.completed ? 'completed' : ''}`}>
               <div className="routine-detail__day-header">
                 <div>
                   <span className="routine-detail__day-num">Day {day.dayNumber}</span>
@@ -131,11 +131,11 @@ export function RoutineDetail() {
 
               <div className="routine-detail__exercises">
                 {day.exercises.map((ex) => (
-                  <div key={ex.id ?? `${ex.exerciseId}-${ex.order}`} className="routine-detail__exercise">
+                  <div key={`${ex.exerciseId}-${ex.order}`} className="routine-detail__exercise">
                     <span className="routine-detail__ex-order">{ex.order}</span>
                     <div className="routine-detail__ex-info">
                       <Link to={`/exercises/${ex.exerciseId}`} className="routine-detail__ex-name">
-                        {ex.exerciseId}
+                        {ex.exerciseName || ex.exerciseId}
                       </Link>
                       <div className="routine-detail__ex-prescription">
                         <span>{ex.sets} sets × {ex.reps} reps</span>

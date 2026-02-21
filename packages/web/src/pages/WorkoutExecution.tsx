@@ -6,13 +6,11 @@ import {
   startWorkout, logSet, pauseWorkout, resumeWorkout,
   completeWorkout, clearActiveSession,
 } from '../store/workoutSlice';
-import type { RoutineExercise } from '@vibefit/shared';
-
 export function WorkoutExecution() {
   const { routineId } = useParams<{ routineId: string }>();
   const navigate = useNavigate();
   const dispatch = useAppDispatch();
-  const routine = useAppSelector((s) => s.routines.selectedRoutine);
+  const routine = useAppSelector((s) => s.routines.selected);
   const activeSession = useAppSelector((s) => s.workout.activeSession);
 
   // Workout state from URL search params
@@ -76,7 +74,7 @@ export function WorkoutExecution() {
   // Get the current day's exercises
   const currentWeek = routine?.weeks?.find((w) => w.weekNumber === weekNum);
   const currentDay = currentWeek?.days?.find((d) => d.dayNumber === dayNum);
-  const exercises: RoutineExercise[] = currentDay?.exercises ?? [];
+  const exercises = currentDay?.exercises ?? [];
   const currentExercise = exercises[exerciseIndex];
 
   // Pre-fill weight from targetWeight

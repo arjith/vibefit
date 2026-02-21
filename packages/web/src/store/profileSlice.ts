@@ -2,7 +2,7 @@ import { createSlice, createAsyncThunk } from '@reduxjs/toolkit';
 import type { UserProfile } from '@vibefit/shared';
 import { api } from '../lib/api';
 
-interface ProfileState {
+export interface ProfileState {
   profile: UserProfile | null;
   status: 'idle' | 'loading' | 'loaded' | 'error';
   error: string | null;

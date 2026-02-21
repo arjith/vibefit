@@ -10,7 +10,7 @@ interface StreakData {
   freezesAvailable: number;
 }
 
-interface StreakState {
+export interface StreakState {
   data: StreakData | null;
   status: 'idle' | 'loading' | 'succeeded' | 'failed';
   error: string | null;

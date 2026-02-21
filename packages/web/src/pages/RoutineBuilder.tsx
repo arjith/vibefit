@@ -6,8 +6,6 @@ import { FITNESS_GOALS, EQUIPMENT_OPTIONS, EQUIPMENT_PRESETS } from '@vibefit/sh
 
 const STEPS = ['Goal', 'Schedule', 'Equipment', 'Level', 'Preview'] as const;
 
-type Step = typeof STEPS[number];
-
 export function RoutineBuilder() {
   const dispatch = useAppDispatch();
   const navigate = useNavigate();

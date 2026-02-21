@@ -4,7 +4,7 @@ import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import { api } from '../lib/api';
 
 // ─── Inline slice (co-located for simplicity) ────────────────
-interface AchievementItem {
+export interface AchievementItem {
   id: string;
   name: string;
   description: string;

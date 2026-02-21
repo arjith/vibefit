@@ -94,7 +94,7 @@ export function Exercises() {
         >
           <option value="">All Muscles</option>
           {MUSCLE_GROUPS.map((mg) => (
-            <option key={mg} value={mg}>{mg.charAt(0).toUpperCase() + mg.slice(1)}</option>
+            <option key={mg.id} value={mg.id}>{mg.label}</option>
           ))}
         </select>
         <select
@@ -105,7 +105,7 @@ export function Exercises() {
         >
           <option value="">All Equipment</option>
           {EQUIPMENT_OPTIONS.map((eq) => (
-            <option key={eq} value={eq}>{eq.charAt(0).toUpperCase() + eq.slice(1)}</option>
+            <option key={eq.id} value={eq.id}>{eq.label}</option>
           ))}
         </select>
         <select

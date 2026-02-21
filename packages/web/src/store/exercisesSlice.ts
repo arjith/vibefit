@@ -28,7 +28,7 @@ interface ExerciseMeta {
   totalPages: number;
 }
 
-interface ExercisesState {
+export interface ExercisesState {
   items: Exercise[];
   selected: Exercise | null;
   filters: ExerciseFilters;
