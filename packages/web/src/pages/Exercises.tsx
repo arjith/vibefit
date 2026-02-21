@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useCallback, useRef } from 'react';
-import { useSearchParams } from 'react-router-dom';
+import { useSearchParams, Link } from 'react-router-dom';
 import { useAppDispatch, useAppSelector } from '../hooks/useRedux';
 import { fetchExercises, setFilters } from '../store/exercisesSlice';
 import { MUSCLE_GROUPS, EQUIPMENT_OPTIONS } from '@vibefit/shared';
@@ -155,7 +155,7 @@ export function Exercises() {
         <>
           <div className="vf-exercise-grid">
             {items.map((ex) => (
-              <article key={ex.id} className="vf-exercise-card">
+              <Link to={`/exercises/${ex.id}`} key={ex.id} className="vf-exercise-card vf-exercise-card--link">
                 <div className="vf-exercise-card__image">
                   {ex.imageUrls?.[0] ? (
                     <img src={ex.imageUrls[0]} alt={ex.name} loading="lazy" />
@@ -171,7 +171,7 @@ export function Exercises() {
                     <span className="vf-badge">{ex.difficulty}</span>
                   </div>
                 </div>
-              </article>
+              </Link>
             ))}
           </div>
 
