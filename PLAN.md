@@ -1,6 +1,6 @@
 # VibeFit — Implementation Plan & Progress Tracker
 
-> **Status:** 🚧 IN PROGRESS — Phase 3 Intelligence Layer in progress — pushed to GitHub  
+> **Status:** 🚧 IN PROGRESS — Phase 3 ✅ + Phase 4.5 ✅ + Phase 5.1 ✅ — pushed to GitHub  
 > **Last Updated:** 2026-02-23  
 > **Framework:** Jobs-to-Be-Done (JTBD) × Entity State Machines  
 > **Architecture:** pnpm Monorepo → `@vibefit/{shared,ui,core,api,web,ml,agent}`
@@ -94,10 +94,10 @@ ERROR → retry (exp backoff: 1s→2s→4s, max 3) → LOADING
 | # | Task | Status | Depends | Verification |
 |---|------|--------|---------|-------------|
 | 3.1 | Biomechanical substitution (joint stress, injury-aware, pgvector similarity) | ✅ | 0.3,1.2 | Scoring engine + injury-aware + API endpoint |
-| 3.2 | Adaptive difficulty (RPE-based, auto-deload, performance trends) | ⬜ | 1.5,2.4 | 3 hard sessions → deload suggestion |
-| 3.3 | LSTM adherence prediction (TF.js, motivation interventions) | ⬜ | 1.5,2.1 | >70% accuracy after 4 weeks |
+| 3.2 | Adaptive difficulty (RPE-based, auto-deload, performance trends) | ✅ | 1.5,2.4 | 3 hard sessions → deload suggestion |
+| 3.3 | LSTM adherence prediction (TF.js, motivation interventions) | ✅ | 1.5,2.1 | >70% accuracy after 4 weeks |
 | 3.4 | Form cue engine (movement-pattern coaching, injury risk tips) | ✅ | 1.2,3.1 | Phase-based cues + contextual tips + API endpoint |
-| 3.5 | AI coach (CascadeFlow: Ollama/Claude, personality, context-aware) | ⬜ | 0.5,2.4 | Ask about plateau → references user data |
+| 3.5 | AI coach (CascadeFlow: Ollama/Claude, personality, context-aware) | ✅ | 0.5,2.4 | Ask about plateau → references user data |
 
 ## Phase 4: Social & Platform
 
@@ -107,13 +107,13 @@ ERROR → retry (exp backoff: 1s→2s→4s, max 3) → LOADING
 | 4.2 | Community challenges (leaderboards, seasonal events, H2H) | ⬜ | 2.2,4.1 | Join → daily progress → leaderboard |
 | 4.3 | WhatsApp/Telegram bot (reminders, quick-log, motivation) | ⬜ | 0.5,2.1 | Send "Bench 185 10" → logs set |
 | 4.4 | Wearable integration (Apple Health, Google Fit, Garmin) | ⬜ | 1.5,2.4 | Import sleep → difficulty adjusts |
-| 4.5 | PWA + offline (SW, IndexedDB, install prompt, push) | ⬜ | 1.5 | Offline workout → sync on reconnect |
+| 4.5 | PWA + offline (SW, IndexedDB, install prompt, push) | ✅ | 1.5 | Offline workout → sync on reconnect |
 
 ## Phase 5: Scale & Monetize
 
 | # | Task | Status | Depends | Verification |
 |---|------|--------|---------|-------------|
-| 5.1 | Premium tier (Stripe, feature gating, 7-day trial) | ⬜ | 0.4,3.5 | Subscribe → unlock → cancel → downgrade |
+| 5.1 | Premium tier (Stripe, feature gating, 7-day trial) | ✅ | 0.4,3.5 | Subscribe → unlock → cancel → downgrade |
 | 5.2 | Coach marketplace (trainer programs, revenue share, reviews) | ⬜ | 1.3,4.1 | Upload program → purchase → populates |
 | 5.3 | Enterprise B2B (org accounts, SSO, team challenges, admin) | ⬜ | 4.2,5.1 | Org → invite → team challenge → admin |
 | 5.4 | Agentic infrastructure (Lobster workflows, task queue) | ⬜ | 3.1-3.5 | Workflow: profile → routine → biomech → predict |
