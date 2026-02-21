@@ -1,7 +1,7 @@
 # VibeFit — Implementation Plan & Progress Tracker
 
-> **Status:** 🚧 IN PROGRESS — Phase 3 ✅ + Phase 4.5 ✅ + Phase 5.1 ✅ — pushed to GitHub  
-> **Last Updated:** 2026-02-23  
+> **Status:** 🚧 IN PROGRESS — Phase 3 ✅ + Phase 4.1 ✅ + Phase 4.5 ✅ + Phase 5.1 ✅ — pushed to GitHub  
+> **Last Updated:** 2026-02-21  
 > **Framework:** Jobs-to-Be-Done (JTBD) × Entity State Machines  
 > **Architecture:** pnpm Monorepo → `@vibefit/{shared,ui,core,api,web,ml,agent}`
 
@@ -103,7 +103,7 @@ ERROR → retry (exp backoff: 1s→2s→4s, max 3) → LOADING
 
 | # | Task | Status | Depends | Verification |
 |---|------|--------|---------|-------------|
-| 4.1 | Social feed (follow, shares, kudos, comments, privacy) | ⬜ | 0.4,1.5 | Share → follower feed → kudos |
+| 4.1 | Social feed (follow, shares, kudos, comments, privacy) | ✅ | 0.4,1.5 | Share → follower feed → kudos |
 | 4.2 | Community challenges (leaderboards, seasonal events, H2H) | ⬜ | 2.2,4.1 | Join → daily progress → leaderboard |
 | 4.3 | WhatsApp/Telegram bot (reminders, quick-log, motivation) | ⬜ | 0.5,2.1 | Send "Bench 185 10" → logs set |
 | 4.4 | Wearable integration (Apple Health, Google Fit, Garmin) | ⬜ | 1.5,2.4 | Import sleep → difficulty adjusts |
