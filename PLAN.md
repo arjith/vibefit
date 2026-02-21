@@ -1,6 +1,6 @@
 # VibeFit — Implementation Plan & Progress Tracker
 
-> **Status:** 🚧 IN PROGRESS — Phase 0: Foundation  
+> **Status:** 🚧 IN PROGRESS — Phase 0 COMPLETE, starting Phase 1  
 > **Last Updated:** 2026-02-21  
 > **Framework:** Jobs-to-Be-Done (JTBD) × Entity State Machines  
 > **Architecture:** pnpm Monorepo → `@vibefit/{shared,ui,core,api,web,ml,agent}`
@@ -62,9 +62,9 @@ ERROR → retry (exp backoff: 1s→2s→4s, max 3) → LOADING
 |---|------|--------|---------|-------------|
 | 0.1 | Monorepo scaffold (pnpm workspaces, 7 packages, tsconfigs, ESLint, Vitest) | ✅ | — | `pnpm install && pnpm -r build` |
 | 0.2 | Pulse design system (`@vibefit/ui` — tokens, Radix primitives, 15+ components) | ✅ | 0.1 | 11 components + tokens, all build clean |
-| 0.3 | PostgreSQL schema + Drizzle ORM (16 tables, pgvector, migrations, seed) | 🚧 | 0.1 | Schema defined, needs migration + seed |
-| 0.4 | Auth system (JWT + refresh, bcrypt, rate limiting, Zod validation) | 🚧 | 0.1 | Scaffolded in API, needs DB wiring |
-| 0.5 | API scaffolding (Express + Zod + error handler + logging + health check) | 🚧 | 0.3,0.4 | Express running, routes stubbed |
+| 0.3 | PostgreSQL schema + Drizzle ORM (16 tables, pgvector, migrations, seed) | ✅ | 0.1 | Schema + seed script + GymVerse data |
+| 0.4 | Auth system (JWT + refresh, bcrypt, rate limiting, Zod validation) | ✅ | 0.1 | DB-wired auth with refresh rotation |
+| 0.5 | API scaffolding (Express + Zod + error handler + logging + health check) | ✅ | 0.3,0.4 | All routes wired to DB |
 
 ## Phase 1: Core Loop (JTBD 1–3)
 

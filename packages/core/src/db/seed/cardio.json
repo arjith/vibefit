@@ -1,0 +1,700 @@
+[
+  {
+    "id": "cardio-dance-001",
+    "name": "Zumba Dance Party",
+    "category": "dance",
+    "funRating": 5,
+    "intensityLevel": "moderate",
+    "caloriesPerHour": 500,
+    "durationMin": 45,
+    "description": "High-energy Latin-inspired dance workout combining salsa, merengue, cumbia, and reggaeton moves. Feels more like a party than a workout!",
+    "howToStart": "Find a Zumba class nearby or follow along with free YouTube Zumba videos. No dance experience needed \u00e2\u20ac\u201d just move and have fun!",
+    "imageUrl": "https://images.unsplash.com/photo-1524594152303-9fd13543fe6e?w=600&h=400&fit=crop",
+    "tags": [
+      "music",
+      "group",
+      "indoor",
+      "no-equipment",
+      "dance"
+    ]
+  },
+  {
+    "id": "cardio-dance-002",
+    "name": "Hip-Hop Dance Workout",
+    "category": "dance",
+    "funRating": 5,
+    "intensityLevel": "high",
+    "caloriesPerHour": 550,
+    "durationMin": 40,
+    "description": "Learn hip-hop choreography while getting a killer cardio workout. Perfect for those who love beats and want to pick up some cool dance moves.",
+    "howToStart": "Search for hip-hop cardio dance workouts online. Start with beginner routines and build up. All you need is space and speakers!",
+    "imageUrl": "https://images.unsplash.com/photo-1535525153412-5a42439a210d?w=600&h=400&fit=crop",
+    "tags": [
+      "music",
+      "group",
+      "solo",
+      "indoor",
+      "no-equipment",
+      "dance"
+    ]
+  },
+  {
+    "id": "cardio-dance-003",
+    "name": "Bollywood Cardio",
+    "category": "dance",
+    "funRating": 5,
+    "intensityLevel": "moderate",
+    "caloriesPerHour": 450,
+    "durationMin": 40,
+    "description": "Energetic Bollywood dance moves set to infectious Indian music. Full-body workout that'll have you smiling the whole time.",
+    "howToStart": "Look up Bollywood dance fitness classes or follow along with videos. The moves are expressive and joyful \u00e2\u20ac\u201d no prior dance experience needed.",
+    "imageUrl": "https://images.unsplash.com/photo-1504609813442-a8924e83f76e?w=600&h=400&fit=crop",
+    "tags": [
+      "music",
+      "group",
+      "solo",
+      "indoor",
+      "no-equipment",
+      "dance"
+    ]
+  },
+  {
+    "id": "cardio-dance-004",
+    "name": "Salsa Fitness",
+    "category": "dance",
+    "funRating": 4,
+    "intensityLevel": "moderate",
+    "caloriesPerHour": 420,
+    "durationMin": 45,
+    "description": "Learn salsa basics while burning calories. The constant footwork and hip movement provide excellent cardio without feeling like exercise.",
+    "howToStart": "Join a beginner salsa class or follow online tutorials. Can be done solo or with a partner. Focus on the rhythm and your feet will follow!",
+    "imageUrl": "https://images.unsplash.com/photo-1545959570-a94084071b5d?w=600&h=400&fit=crop",
+    "tags": [
+      "music",
+      "group",
+      "solo",
+      "indoor",
+      "no-equipment",
+      "dance"
+    ]
+  },
+  {
+    "id": "cardio-dance-005",
+    "name": "Just Dance Gaming Session",
+    "category": "dance",
+    "funRating": 5,
+    "intensityLevel": "moderate",
+    "caloriesPerHour": 400,
+    "durationMin": 30,
+    "description": "Play the Just Dance video game and match dance moves on screen. Competitive, silly, and surprisingly intense. Perfect for rainy days!",
+    "howToStart": "Get Just Dance on any console or use the free Just Dance Now app on your phone. Invite friends for extra fun!",
+    "imageUrl": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=600&h=400&fit=crop",
+    "tags": [
+      "music",
+      "group",
+      "solo",
+      "indoor",
+      "no-equipment",
+      "gaming"
+    ]
+  },
+  {
+    "id": "cardio-sports-001",
+    "name": "Boxing / Kickboxing Workout",
+    "category": "sports",
+    "funRating": 5,
+    "intensityLevel": "high",
+    "caloriesPerHour": 700,
+    "durationMin": 45,
+    "description": "Throw punches, kicks, and combos against a bag or in shadowboxing form. Incredible stress relief and a serious full-body workout.",
+    "howToStart": "Join a boxing gym for proper technique, or start with YouTube shadowboxing workouts at home. Wraps and gloves recommended but not required for shadow work.",
+    "imageUrl": "https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?w=600&h=400&fit=crop",
+    "tags": [
+      "solo",
+      "group",
+      "indoor",
+      "no-equipment",
+      "stress-relief"
+    ]
+  },
+  {
+    "id": "cardio-sports-002",
+    "name": "Jump Rope Freestyle",
+    "category": "sports",
+    "funRating": 4,
+    "intensityLevel": "hiit",
+    "caloriesPerHour": 800,
+    "durationMin": 20,
+    "description": "Not your childhood jump rope \u00e2\u20ac\u201d learn tricks like double-unders, crossovers, and side swings. One of the highest calorie-burning exercises that's actually fun.",
+    "howToStart": "Get a speed rope or weighted rope. Start with basic jumps for 30-second intervals. Progress to tricks as coordination improves.",
+    "imageUrl": "https://images.unsplash.com/photo-1517963628607-235ccdd5476c?w=600&h=400&fit=crop",
+    "tags": [
+      "solo",
+      "indoor",
+      "outdoor",
+      "portable"
+    ]
+  },
+  {
+    "id": "cardio-sports-003",
+    "name": "Basketball Drills & Pickup",
+    "category": "sports",
+    "funRating": 5,
+    "intensityLevel": "high",
+    "caloriesPerHour": 600,
+    "durationMin": 60,
+    "description": "Shoot hoops, run drills, or play pickup games. The constant movement, sprinting, and jumping make basketball one of the best cardio sports.",
+    "howToStart": "Head to a local court with a ball. Practice layups and shooting, or join pickup games. Solo drills are great too: dribbling, suicides, and free throws.",
+    "imageUrl": "https://images.unsplash.com/photo-1546519638-68e109498ffc?w=600&h=400&fit=crop",
+    "tags": [
+      "group",
+      "solo",
+      "outdoor",
+      "indoor",
+      "competitive"
+    ]
+  },
+  {
+    "id": "cardio-sports-004",
+    "name": "Badminton",
+    "category": "sports",
+    "funRating": 4,
+    "intensityLevel": "moderate",
+    "caloriesPerHour": 450,
+    "durationMin": 45,
+    "description": "Fast-paced racquet sport with quick lateral movements and explosive overhead smashes. Way more intense than it looks!",
+    "howToStart": "Find a local badminton club or community center with courts. All you need is a racquet, shuttlecocks, and a partner.",
+    "imageUrl": "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?w=600&h=400&fit=crop",
+    "tags": [
+      "group",
+      "indoor",
+      "outdoor",
+      "competitive"
+    ]
+  },
+  {
+    "id": "cardio-sports-005",
+    "name": "Soccer Drills",
+    "category": "sports",
+    "funRating": 5,
+    "intensityLevel": "high",
+    "caloriesPerHour": 600,
+    "durationMin": 60,
+    "description": "Dribbling drills, passing exercises, and small-sided games. The constant running and direction changes make it incredible cardio.",
+    "howToStart": "Grab a soccer ball and head to a field. Practice dribbling through cones, shooting on goal, or join a recreational league.",
+    "imageUrl": "https://images.unsplash.com/photo-1431324155629-1a6deb1dec8d?w=600&h=400&fit=crop",
+    "tags": [
+      "group",
+      "solo",
+      "outdoor",
+      "competitive"
+    ]
+  },
+  {
+    "id": "cardio-sports-006",
+    "name": "Tennis",
+    "category": "sports",
+    "funRating": 4,
+    "intensityLevel": "high",
+    "caloriesPerHour": 580,
+    "durationMin": 60,
+    "description": "Rally, serve, and volley your way to fitness. Tennis combines sprints, agility, and strategy into an engaging full-body workout.",
+    "howToStart": "Book a court at a local club, grab a racquet, and find a partner. Many parks have free public courts. Take a beginner lesson for proper technique.",
+    "imageUrl": "https://images.unsplash.com/photo-1554068865-24cecd4e34b8?w=600&h=400&fit=crop",
+    "tags": [
+      "group",
+      "outdoor",
+      "indoor",
+      "competitive"
+    ]
+  },
+  {
+    "id": "cardio-outdoor-001",
+    "name": "Trail Running Adventure",
+    "category": "outdoor",
+    "funRating": 4,
+    "intensityLevel": "high",
+    "caloriesPerHour": 650,
+    "durationMin": 45,
+    "description": "Run on natural trails through forests, hills, and scenic paths. Way more engaging than treadmill running \u00e2\u20ac\u201d every run is different!",
+    "howToStart": "Find local trails on AllTrails or trail running apps. Start with easy, well-marked paths. Wear trail running shoes for grip and ankle support.",
+    "imageUrl": "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=600&h=400&fit=crop",
+    "tags": [
+      "solo",
+      "outdoor",
+      "nature",
+      "no-equipment"
+    ]
+  },
+  {
+    "id": "cardio-outdoor-002",
+    "name": "Cycling Adventure",
+    "category": "outdoor",
+    "funRating": 5,
+    "intensityLevel": "moderate",
+    "caloriesPerHour": 500,
+    "durationMin": 60,
+    "description": "Explore your city or countryside on a bike. From casual rides to challenging hill climbs, cycling is freedom + fitness combined.",
+    "howToStart": "Any bike works \u00e2\u20ac\u201d road, mountain, or hybrid. Plan a route, wear a helmet, and start pedaling! Try bike-share programs if you don't own one.",
+    "imageUrl": "https://images.unsplash.com/photo-1541625602330-2277a4c46182?w=600&h=400&fit=crop",
+    "tags": [
+      "solo",
+      "group",
+      "outdoor",
+      "nature"
+    ]
+  },
+  {
+    "id": "cardio-outdoor-003",
+    "name": "Hiking with Intensity",
+    "category": "outdoor",
+    "funRating": 5,
+    "intensityLevel": "moderate",
+    "caloriesPerHour": 430,
+    "durationMin": 90,
+    "description": "Hit the trails with an elevated heart rate. Add a weighted backpack for extra challenge. Stunning views are the reward!",
+    "howToStart": "Find a local hiking trail with elevation gain. Start with moderate trails. Bring water and snacks. Add a 10-20lb backpack for ruck hiking intensity.",
+    "imageUrl": "https://images.unsplash.com/photo-1551632811-561732d1e306?w=600&h=400&fit=crop",
+    "tags": [
+      "solo",
+      "group",
+      "outdoor",
+      "nature",
+      "no-equipment"
+    ]
+  },
+  {
+    "id": "cardio-outdoor-004",
+    "name": "Swimming Laps",
+    "category": "outdoor",
+    "funRating": 4,
+    "intensityLevel": "moderate",
+    "caloriesPerHour": 500,
+    "durationMin": 45,
+    "description": "Full-body, zero-impact cardio that's easy on joints but tough on calories. The water resistance works every muscle group.",
+    "howToStart": "Find a local pool (community centers, gyms, or outdoor pools). Start with 10-15 minutes of continuous swimming and build up. Mix strokes for variety.",
+    "imageUrl": "https://images.unsplash.com/photo-1530549387789-4c1017266635?w=600&h=400&fit=crop",
+    "tags": [
+      "solo",
+      "indoor",
+      "outdoor",
+      "no-impact"
+    ]
+  },
+  {
+    "id": "cardio-outdoor-005",
+    "name": "Kayaking / Canoeing",
+    "category": "outdoor",
+    "funRating": 5,
+    "intensityLevel": "moderate",
+    "caloriesPerHour": 400,
+    "durationMin": 60,
+    "description": "Paddle through rivers, lakes, or coastal waters. Great upper body and core workout while enjoying nature.",
+    "howToStart": "Rent a kayak at a local waterway or lake. Start with calm water. Wear a life jacket. Many parks offer kayak rentals by the hour.",
+    "imageUrl": "https://images.unsplash.com/photo-1472745942893-4b9f730c7668?w=600&h=400&fit=crop",
+    "tags": [
+      "solo",
+      "group",
+      "outdoor",
+      "nature"
+    ]
+  },
+  {
+    "id": "cardio-outdoor-006",
+    "name": "Beach Volleyball",
+    "category": "outdoor",
+    "funRating": 5,
+    "intensityLevel": "high",
+    "caloriesPerHour": 550,
+    "durationMin": 60,
+    "description": "Sand adds extra resistance to every jump and sprint. A social, competitive workout that doesn't feel like exercise.",
+    "howToStart": "Find a beach or sand volleyball court. Grab a group of friends and a ball. Casual play is just as effective as competitive matches!",
+    "imageUrl": "https://images.unsplash.com/photo-1612872087720-bb876e2e67d1?w=600&h=400&fit=crop",
+    "tags": [
+      "group",
+      "outdoor",
+      "competitive",
+      "social"
+    ]
+  },
+  {
+    "id": "cardio-playful-001",
+    "name": "Trampoline Workout",
+    "category": "playful",
+    "funRating": 5,
+    "intensityLevel": "moderate",
+    "caloriesPerHour": 400,
+    "durationMin": 30,
+    "description": "Bouncing on a trampoline or rebounder burns serious calories while feeling like pure fun. Low impact on joints, high impact on fitness!",
+    "howToStart": "Get a mini rebounder for home use, or visit a trampoline park. Follow trampoline fitness videos for structured workouts.",
+    "imageUrl": "https://images.unsplash.com/photo-1626224583764-f87db24ac4ea?w=600&h=400&fit=crop",
+    "tags": [
+      "solo",
+      "indoor",
+      "no-impact",
+      "playful"
+    ]
+  },
+  {
+    "id": "cardio-playful-002",
+    "name": "Hula Hoop Fitness",
+    "category": "playful",
+    "funRating": 4,
+    "intensityLevel": "moderate",
+    "caloriesPerHour": 350,
+    "durationMin": 30,
+    "description": "Weighted hula hooping engages your entire core, improves coordination, and burns calories. Surprisingly addictive once you get the rhythm!",
+    "howToStart": "Get a weighted fitness hula hoop (1-2 lbs). Start with 5-minute sessions and build up. Place the hoop at waist level and push with your hips.",
+    "imageUrl": "https://images.unsplash.com/photo-1518310383802-640c2de311b2?w=600&h=400&fit=crop",
+    "tags": [
+      "solo",
+      "indoor",
+      "outdoor",
+      "no-equipment",
+      "playful"
+    ]
+  },
+  {
+    "id": "cardio-playful-003",
+    "name": "Obstacle Course / Ninja Warrior Training",
+    "category": "playful",
+    "funRating": 5,
+    "intensityLevel": "high",
+    "caloriesPerHour": 700,
+    "durationMin": 45,
+    "description": "Navigate through climbing walls, monkey bars, rope swings, and balance beams. Builds functional fitness while channeling your inner ninja warrior!",
+    "howToStart": "Find a local ninja warrior gym or obstacle course facility. Many offer beginner classes. Or set up a DIY backyard course with basic equipment.",
+    "imageUrl": "https://images.unsplash.com/photo-1601422407692-ec4eeec1d9b3?w=600&h=400&fit=crop",
+    "tags": [
+      "solo",
+      "group",
+      "indoor",
+      "outdoor",
+      "competitive"
+    ]
+  },
+  {
+    "id": "cardio-playful-004",
+    "name": "Stair Challenge Races",
+    "category": "playful",
+    "funRating": 3,
+    "intensityLevel": "hiit",
+    "caloriesPerHour": 750,
+    "durationMin": 20,
+    "description": "Sprint up stairs, walk down, repeat. Race against friends or your own time. Simple, brutal, and incredibly effective.",
+    "howToStart": "Find a staircase \u00e2\u20ac\u201d stadium bleachers, building stairs, or outdoor steps. Start with 5 rounds of climbing up and walking down. Add variations like two-at-a-time.",
+    "imageUrl": "https://images.unsplash.com/photo-1476480862126-209bfaa8edc8?w=600&h=400&fit=crop",
+    "tags": [
+      "solo",
+      "group",
+      "outdoor",
+      "indoor",
+      "no-equipment",
+      "competitive"
+    ]
+  },
+  {
+    "id": "cardio-playful-005",
+    "name": "Tag / Chase Games",
+    "category": "playful",
+    "funRating": 5,
+    "intensityLevel": "hiit",
+    "caloriesPerHour": 600,
+    "durationMin": 30,
+    "description": "Classic tag, freeze tag, or capture the flag \u00e2\u20ac\u201d running games that are so fun you forget you're doing HIIT. Great for groups and families.",
+    "howToStart": "Grab 4+ friends and head to a park or open field. Agree on rules and boundaries. Variations: freeze tag, sharks and minnows, capture the flag.",
+    "imageUrl": "https://images.unsplash.com/photo-1596464716127-f2a82984de30?w=600&h=400&fit=crop",
+    "tags": [
+      "group",
+      "outdoor",
+      "no-equipment",
+      "playful",
+      "social"
+    ]
+  },
+  {
+    "id": "cardio-playful-006",
+    "name": "Dance Dance Revolution / Rhythm Games",
+    "category": "playful",
+    "funRating": 5,
+    "intensityLevel": "moderate",
+    "caloriesPerHour": 380,
+    "durationMin": 30,
+    "description": "Step on arrows to the beat in DDR or play VR rhythm games like Beat Saber. Gaming meets fitness in the most addictive way possible.",
+    "howToStart": "Get a DDR dance pad for your console, or grab a VR headset and play Beat Saber. Arcades still have DDR machines too!",
+    "imageUrl": "https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?w=600&h=400&fit=crop",
+    "tags": [
+      "solo",
+      "group",
+      "indoor",
+      "music",
+      "gaming"
+    ]
+  },
+  {
+    "id": "cardio-playful-007",
+    "name": "Roller Skating / Blading",
+    "category": "playful",
+    "funRating": 5,
+    "intensityLevel": "moderate",
+    "caloriesPerHour": 450,
+    "durationMin": 45,
+    "description": "Glide through parks, boardwalks, or roller rinks. Great for legs, glutes, and balance. Add music for the full vibe!",
+    "howToStart": "Rent or buy inline skates or quad skates. Start on flat, smooth surfaces. Wear protective gear (wrists, knees, helmet). Roller rinks offer smooth indoor surfaces.",
+    "imageUrl": "https://images.unsplash.com/photo-1544551763-46a013bb70d5?w=600&h=400&fit=crop",
+    "tags": [
+      "solo",
+      "group",
+      "outdoor",
+      "indoor",
+      "music",
+      "playful"
+    ]
+  },
+  {
+    "id": "cardio-traditional-001",
+    "name": "HIIT Circuit Blitz",
+    "category": "traditional",
+    "funRating": 3,
+    "intensityLevel": "hiit",
+    "caloriesPerHour": 750,
+    "durationMin": 25,
+    "description": "Short bursts of all-out effort followed by brief rest. Exercises like jump squats, burpees, and mountain climbers keep your heart rate sky-high.",
+    "howToStart": "Set a timer for 30 seconds work / 15 seconds rest. Pick 6-8 exercises. Do 3-4 rounds. That's it \u00e2\u20ac\u201d done in under 30 minutes!",
+    "imageUrl": "https://images.unsplash.com/photo-1534258936925-c58bed479fcb?w=600&h=400&fit=crop",
+    "tags": [
+      "solo",
+      "indoor",
+      "outdoor",
+      "no-equipment",
+      "time-efficient"
+    ]
+  },
+  {
+    "id": "cardio-traditional-002",
+    "name": "Tabata Protocol",
+    "category": "traditional",
+    "funRating": 3,
+    "intensityLevel": "hiit",
+    "caloriesPerHour": 800,
+    "durationMin": 20,
+    "description": "The original HIIT workout: 20 seconds all-out, 10 seconds rest, 8 rounds per exercise. Brutally efficient and scientifically proven.",
+    "howToStart": "Pick 4 exercises. Do each for 4 minutes of Tabata (20s on / 10s off \u00c3\u2014 8 rounds). Rest 1 minute between exercises. Use a Tabata timer app.",
+    "imageUrl": "https://images.unsplash.com/photo-1599058917212-d750089bc07e?w=600&h=400&fit=crop",
+    "tags": [
+      "solo",
+      "indoor",
+      "outdoor",
+      "no-equipment",
+      "time-efficient"
+    ]
+  },
+  {
+    "id": "cardio-traditional-003",
+    "name": "Battle Ropes Waves",
+    "category": "traditional",
+    "funRating": 4,
+    "intensityLevel": "hiit",
+    "caloriesPerHour": 620,
+    "durationMin": 20,
+    "description": "Create waves with heavy ropes for an arm-scorching, heart-pumping workout. Alternating waves, slams, circles \u00e2\u20ac\u201d tons of variations to keep it fresh.",
+    "howToStart": "Find battle ropes at your gym. Anchor the middle point. Try: 30s alternating waves, 30s rest for 10 rounds. Mix in slams and circles.",
+    "imageUrl": "https://images.unsplash.com/photo-1598266663439-2056e6900339?w=600&h=400&fit=crop",
+    "tags": [
+      "solo",
+      "indoor",
+      "outdoor",
+      "upper-body"
+    ]
+  },
+  {
+    "id": "cardio-traditional-004",
+    "name": "Rowing Machine Intervals",
+    "category": "traditional",
+    "funRating": 3,
+    "intensityLevel": "high",
+    "caloriesPerHour": 600,
+    "durationMin": 25,
+    "description": "Pull hard on the rower for interval training that hits legs, back, and arms simultaneously. Low impact, high reward.",
+    "howToStart": "Hop on a rowing machine (erg). Try 500m sprints with 1-minute rest between sets. Aim for 5-8 intervals. Focus on leg drive, not just arm pulling.",
+    "imageUrl": "https://images.unsplash.com/photo-1519505907962-0a6cb0167c73?w=600&h=400&fit=crop",
+    "tags": [
+      "solo",
+      "indoor",
+      "machine",
+      "no-impact"
+    ]
+  },
+  {
+    "id": "cardio-traditional-005",
+    "name": "Sled Push / Pull",
+    "category": "traditional",
+    "funRating": 4,
+    "intensityLevel": "hiit",
+    "caloriesPerHour": 700,
+    "durationMin": 20,
+    "description": "Push or pull a weighted sled across turf for explosive leg power and insane conditioning. Simple but devastatingly effective.",
+    "howToStart": "Load a sled with moderate weight. Push it 20-30 yards, rest, repeat. Alternate between pushing and pulling with straps. Start light!",
+    "imageUrl": "https://images.unsplash.com/photo-1541534741688-6078c6bfb5c5?w=600&h=400&fit=crop",
+    "tags": [
+      "solo",
+      "indoor",
+      "outdoor",
+      "lower-body"
+    ]
+  },
+  {
+    "id": "cardio-traditional-006",
+    "name": "Spin / Indoor Cycling Class",
+    "category": "traditional",
+    "funRating": 4,
+    "intensityLevel": "high",
+    "caloriesPerHour": 600,
+    "durationMin": 45,
+    "description": "Ride a stationary bike with instructor-led intervals, hill climbs, and sprints set to pumping music. Motivating group energy included!",
+    "howToStart": "Join a spin class at your gym, or stream one at home with a stationary bike. Many gyms offer free first-class passes.",
+    "imageUrl": "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?w=600&h=400&fit=crop",
+    "tags": [
+      "group",
+      "solo",
+      "indoor",
+      "music",
+      "machine"
+    ]
+  },
+  {
+    "id": "cardio-mindbody-001",
+    "name": "Power Yoga Flow",
+    "category": "mind-body",
+    "funRating": 4,
+    "intensityLevel": "moderate",
+    "caloriesPerHour": 350,
+    "durationMin": 50,
+    "description": "Faster-paced yoga that builds strength, flexibility, AND gets your heart rate up. Flowing sequences keep you moving constantly.",
+    "howToStart": "Join a Power Yoga or Vinyasa Flow class. Or follow online power yoga videos. You just need a mat and some space.",
+    "imageUrl": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?w=600&h=400&fit=crop",
+    "tags": [
+      "solo",
+      "group",
+      "indoor",
+      "no-equipment",
+      "flexibility",
+      "stress-relief"
+    ]
+  },
+  {
+    "id": "cardio-mindbody-002",
+    "name": "Martial Arts Kata / Forms",
+    "category": "mind-body",
+    "funRating": 4,
+    "intensityLevel": "moderate",
+    "caloriesPerHour": 400,
+    "durationMin": 40,
+    "description": "Practice martial arts forms (kata, poomsae, or taolu) that combine striking, blocking, and movement patterns. Moving meditation meets combat fitness.",
+    "howToStart": "Join a martial arts school (karate, taekwondo, kung fu) or learn basic forms from online tutorials. Focus on precision and power in each movement.",
+    "imageUrl": "https://images.unsplash.com/photo-1555597673-b21d5c935865?w=600&h=400&fit=crop",
+    "tags": [
+      "solo",
+      "indoor",
+      "outdoor",
+      "no-equipment",
+      "stress-relief"
+    ]
+  },
+  {
+    "id": "cardio-mindbody-003",
+    "name": "Tai Chi Flow",
+    "category": "mind-body",
+    "funRating": 3,
+    "intensityLevel": "low",
+    "caloriesPerHour": 200,
+    "durationMin": 40,
+    "description": "Slow, flowing movements that improve balance, coordination, and mental calm. Light cardio that's perfect for active recovery days.",
+    "howToStart": "Join a Tai Chi class at a community center or park. Many offer free sessions. Follow along with YouTube beginner Tai Chi forms.",
+    "imageUrl": "https://images.unsplash.com/photo-1506126613408-eca07ce68773?w=600&h=400&fit=crop",
+    "tags": [
+      "solo",
+      "group",
+      "indoor",
+      "outdoor",
+      "no-equipment",
+      "stress-relief",
+      "low-impact"
+    ]
+  },
+  {
+    "id": "cardio-playful-008",
+    "name": "Rock Climbing / Bouldering",
+    "category": "playful",
+    "funRating": 5,
+    "intensityLevel": "high",
+    "caloriesPerHour": 550,
+    "durationMin": 60,
+    "description": "Solve vertical puzzles with your body! Climbing works grip, arms, back, core, and legs while keeping your mind engaged on the route.",
+    "howToStart": "Visit a local climbing gym. Most offer rental gear and beginner lessons. Start with bouldering (no ropes needed, shorter walls). It's addictive!",
+    "imageUrl": "https://images.unsplash.com/photo-1522163182402-834f871fd851?w=600&h=400&fit=crop",
+    "tags": [
+      "solo",
+      "group",
+      "indoor",
+      "outdoor",
+      "full-body"
+    ]
+  },
+  {
+    "id": "cardio-sports-007",
+    "name": "Pickleball",
+    "category": "sports",
+    "funRating": 5,
+    "intensityLevel": "moderate",
+    "caloriesPerHour": 400,
+    "durationMin": 45,
+    "description": "The fastest-growing sport \u00e2\u20ac\u201d a fun mix of tennis, ping-pong, and badminton. Easy to learn, addictively competitive, and great for all ages.",
+    "howToStart": "Find local pickleball courts (many parks have them now). Get a paddle and ball. Rules are simple \u00e2\u20ac\u201d watch a 5-minute tutorial and start playing!",
+    "imageUrl": "https://images.unsplash.com/photo-1554068865-24cecd4e34b8?w=600&h=400&fit=crop",
+    "tags": [
+      "group",
+      "outdoor",
+      "indoor",
+      "competitive",
+      "social"
+    ]
+  },
+  {
+    "id": "cardio-outdoor-007",
+    "name": "Paddleboard (SUP)",
+    "category": "outdoor",
+    "funRating": 5,
+    "intensityLevel": "moderate",
+    "caloriesPerHour": 400,
+    "durationMin": 60,
+    "description": "Stand on a paddleboard and cruise across calm water. Incredible core workout just from balancing, plus upper body from paddling.",
+    "howToStart": "Rent a paddleboard at a lake or coastal area. Start on your knees, then stand up when comfortable. Calm water is best for beginners.",
+    "imageUrl": "https://images.unsplash.com/photo-1507525428034-b723cf961d3e?w=600&h=400&fit=crop",
+    "tags": [
+      "solo",
+      "outdoor",
+      "nature",
+      "core"
+    ]
+  },
+  {
+    "id": "cardio-playful-009",
+    "name": "Frisbee / Ultimate Frisbee",
+    "category": "playful",
+    "funRating": 5,
+    "intensityLevel": "high",
+    "caloriesPerHour": 550,
+    "durationMin": 60,
+    "description": "Sprint, dive, and throw in this fast-paced team sport. No refs, player-called fouls, and a community known for being incredibly welcoming.",
+    "howToStart": "Find a local ultimate frisbee pickup group or league. All you need is cleats and a disc. Most groups welcome beginners with open arms!",
+    "imageUrl": "https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=600&h=400&fit=crop",
+    "tags": [
+      "group",
+      "outdoor",
+      "competitive",
+      "social",
+      "no-equipment"
+    ]
+  }
+]

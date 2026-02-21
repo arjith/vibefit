@@ -17,15 +17,7 @@
     "noUnusedLocals": true,
     "noUnusedParameters": true,
     "noFallthroughCasesInSwitch": true,
-    "exactOptionalPropertyTypes": false,
-    "paths": {
-      "@vibefit/shared": ["./packages/shared/src"],
-      "@vibefit/shared/*": ["./packages/shared/src/*"],
-      "@vibefit/ui": ["./packages/ui/src"],
-      "@vibefit/ui/*": ["./packages/ui/src/*"],
-      "@vibefit/core": ["./packages/core/src"],
-      "@vibefit/core/*": ["./packages/core/src/*"]
-    }
+    "exactOptionalPropertyTypes": false
   },
   "exclude": ["node_modules", "dist", "*.test.ts", "*.test.tsx"]
 }

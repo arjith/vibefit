@@ -1,0 +1,2243 @@
+[
+  {
+    "id": "chest-001",
+    "name": "Barbell Bench Press",
+    "muscleGroup": "chest",
+    "secondaryMuscles": [
+      "shoulders",
+      "arms"
+    ],
+    "equipment": "barbell",
+    "difficulty": "intermediate",
+    "instructions": [
+      "Lie flat on a bench with feet on the floor",
+      "Grip the bar slightly wider than shoulder-width",
+      "Unrack the bar and lower it to mid-chest",
+      "Press the bar back up to lockout"
+    ],
+    "tips": [
+      "Keep your shoulder blades retracted",
+      "Drive through your feet for stability"
+    ],
+    "imageUrl": "/images/exercises/bench-press.jpg",
+    "tags": [
+      "compound",
+      "push",
+      "upper-body"
+    ],
+    "alternateExerciseIds": [
+      "chest-002",
+      "chest-003",
+      "chest-004"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Bench_Press_-_Medium_Grip/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Bench_Press_-_Medium_Grip/1.jpg"
+    ]
+  },
+  {
+    "id": "chest-002",
+    "name": "Dumbbell Bench Press",
+    "muscleGroup": "chest",
+    "secondaryMuscles": [
+      "shoulders",
+      "arms"
+    ],
+    "equipment": "dumbbell",
+    "difficulty": "intermediate",
+    "instructions": [
+      "Lie flat on a bench holding dumbbells at chest level",
+      "Press dumbbells up until arms are extended",
+      "Lower dumbbells back to chest level with control"
+    ],
+    "tips": [
+      "Allows greater range of motion than barbell",
+      "Keep wrists straight throughout"
+    ],
+    "imageUrl": "/images/exercises/db-bench-press.jpg",
+    "tags": [
+      "compound",
+      "push",
+      "upper-body"
+    ],
+    "alternateExerciseIds": [
+      "chest-001",
+      "chest-003",
+      "chest-005"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Decline_Dumbbell_Bench_Press/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Decline_Dumbbell_Bench_Press/1.jpg"
+    ]
+  },
+  {
+    "id": "chest-003",
+    "name": "Push-Ups",
+    "muscleGroup": "chest",
+    "secondaryMuscles": [
+      "shoulders",
+      "arms",
+      "core"
+    ],
+    "equipment": "bodyweight",
+    "difficulty": "beginner",
+    "instructions": [
+      "Start in a high plank position",
+      "Lower your body until chest nearly touches the floor",
+      "Push back up to starting position"
+    ],
+    "tips": [
+      "Keep your core tight and body in a straight line",
+      "Modify on knees if needed"
+    ],
+    "imageUrl": "/images/exercises/push-ups.jpg",
+    "tags": [
+      "compound",
+      "push",
+      "bodyweight",
+      "no-equipment"
+    ],
+    "alternateExerciseIds": [
+      "chest-001",
+      "chest-004",
+      "chest-006"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Handstand_Push-Ups/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Handstand_Push-Ups/1.jpg"
+    ]
+  },
+  {
+    "id": "chest-004",
+    "name": "Incline Barbell Bench Press",
+    "muscleGroup": "chest",
+    "secondaryMuscles": [
+      "shoulders",
+      "arms"
+    ],
+    "equipment": "barbell",
+    "difficulty": "intermediate",
+    "instructions": [
+      "Set bench to 30-45 degree incline",
+      "Grip barbell slightly wider than shoulders",
+      "Lower bar to upper chest",
+      "Press back to lockout"
+    ],
+    "tips": [
+      "Targets upper chest fibers",
+      "Don't set incline too steep or shoulders take over"
+    ],
+    "imageUrl": "/images/exercises/incline-bench.jpg",
+    "tags": [
+      "compound",
+      "push",
+      "upper-body"
+    ],
+    "alternateExerciseIds": [
+      "chest-005",
+      "chest-001",
+      "chest-002"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Decline_Barbell_Bench_Press/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Decline_Barbell_Bench_Press/1.jpg"
+    ]
+  },
+  {
+    "id": "chest-005",
+    "name": "Incline Dumbbell Press",
+    "muscleGroup": "chest",
+    "secondaryMuscles": [
+      "shoulders",
+      "arms"
+    ],
+    "equipment": "dumbbell",
+    "difficulty": "intermediate",
+    "instructions": [
+      "Set bench to 30-45 degree incline",
+      "Hold dumbbells at shoulder level",
+      "Press dumbbells up and slightly together",
+      "Lower with control"
+    ],
+    "tips": [
+      "Great for upper chest development",
+      "Squeeze at the top"
+    ],
+    "imageUrl": "/images/exercises/incline-db-press.jpg",
+    "tags": [
+      "compound",
+      "push",
+      "upper-body"
+    ],
+    "alternateExerciseIds": [
+      "chest-004",
+      "chest-002",
+      "chest-006"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Incline_Dumbbell_Press/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Incline_Dumbbell_Press/1.jpg"
+    ]
+  },
+  {
+    "id": "chest-006",
+    "name": "Cable Chest Flyes",
+    "muscleGroup": "chest",
+    "secondaryMuscles": [
+      "shoulders"
+    ],
+    "equipment": "cable",
+    "difficulty": "beginner",
+    "instructions": [
+      "Set cables at chest height",
+      "Step forward with one foot",
+      "Bring handles together in front of chest in a hugging motion",
+      "Slowly return to start"
+    ],
+    "tips": [
+      "Focus on squeezing the chest",
+      "Keep a slight bend in elbows"
+    ],
+    "imageUrl": "/images/exercises/cable-flyes.jpg",
+    "tags": [
+      "isolation",
+      "push",
+      "upper-body"
+    ],
+    "alternateExerciseIds": [
+      "chest-007",
+      "chest-003",
+      "chest-002"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Chest_Press/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Chest_Press/1.jpg"
+    ]
+  },
+  {
+    "id": "chest-007",
+    "name": "Dumbbell Flyes",
+    "muscleGroup": "chest",
+    "secondaryMuscles": [
+      "shoulders"
+    ],
+    "equipment": "dumbbell",
+    "difficulty": "beginner",
+    "instructions": [
+      "Lie flat on bench with dumbbells above chest",
+      "Open arms wide with slight elbow bend",
+      "Lower until you feel a stretch in the chest",
+      "Bring dumbbells back together"
+    ],
+    "tips": [
+      "Don't go too heavy \u00e2\u20ac\u201d this is an isolation move",
+      "Think of hugging a large tree"
+    ],
+    "imageUrl": "/images/exercises/db-flyes.jpg",
+    "tags": [
+      "isolation",
+      "push",
+      "upper-body"
+    ],
+    "alternateExerciseIds": [
+      "chest-006",
+      "chest-003",
+      "chest-008"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Decline_Dumbbell_Flyes/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Decline_Dumbbell_Flyes/1.jpg"
+    ]
+  },
+  {
+    "id": "chest-008",
+    "name": "Chest Dips",
+    "muscleGroup": "chest",
+    "secondaryMuscles": [
+      "shoulders",
+      "arms"
+    ],
+    "equipment": "bodyweight",
+    "difficulty": "advanced",
+    "instructions": [
+      "Grip parallel bars and lift yourself up",
+      "Lean forward slightly",
+      "Lower body by bending elbows until shoulders are below elbows",
+      "Push back up to starting position"
+    ],
+    "tips": [
+      "Lean forward to target chest more",
+      "Keep it slow and controlled"
+    ],
+    "imageUrl": "/images/exercises/chest-dips.jpg",
+    "tags": [
+      "compound",
+      "push",
+      "bodyweight"
+    ],
+    "alternateExerciseIds": [
+      "chest-003",
+      "chest-001",
+      "chest-007"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bench_Dips/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bench_Dips/1.jpg"
+    ]
+  },
+  {
+    "id": "chest-009",
+    "name": "Machine Chest Press",
+    "muscleGroup": "chest",
+    "secondaryMuscles": [
+      "shoulders",
+      "arms"
+    ],
+    "equipment": "machine",
+    "difficulty": "beginner",
+    "instructions": [
+      "Sit in the machine with back flat against pad",
+      "Grip handles at chest height",
+      "Push handles forward until arms are extended",
+      "Return slowly to start"
+    ],
+    "tips": [
+      "Great for beginners learning the pressing motion",
+      "Adjust seat height so handles align with mid-chest"
+    ],
+    "imageUrl": "/images/exercises/machine-chest-press.jpg",
+    "tags": [
+      "compound",
+      "push",
+      "machine"
+    ],
+    "alternateExerciseIds": [
+      "chest-001",
+      "chest-002",
+      "chest-003"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Machine_Bench_Press/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Machine_Bench_Press/1.jpg"
+    ]
+  },
+  {
+    "id": "back-001",
+    "name": "Pull-Ups",
+    "muscleGroup": "back",
+    "secondaryMuscles": [
+      "arms"
+    ],
+    "equipment": "bodyweight",
+    "difficulty": "intermediate",
+    "instructions": [
+      "Hang from a pull-up bar with overhand grip",
+      "Pull yourself up until chin is over the bar",
+      "Lower yourself with control"
+    ],
+    "tips": [
+      "Engage your lats, don't just use arms",
+      "Use a band for assistance if needed"
+    ],
+    "imageUrl": "/images/exercises/pull-ups.jpg",
+    "tags": [
+      "compound",
+      "pull",
+      "bodyweight"
+    ],
+    "alternateExerciseIds": [
+      "back-002",
+      "back-003",
+      "back-004"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Rocky_Pull-Ups_Pulldowns/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Rocky_Pull-Ups_Pulldowns/1.jpg"
+    ]
+  },
+  {
+    "id": "back-002",
+    "name": "Lat Pulldown",
+    "muscleGroup": "back",
+    "secondaryMuscles": [
+      "arms"
+    ],
+    "equipment": "cable",
+    "difficulty": "beginner",
+    "instructions": [
+      "Sit at lat pulldown machine",
+      "Grip the bar wider than shoulder-width",
+      "Pull bar down to upper chest",
+      "Slowly return to start"
+    ],
+    "tips": [
+      "Don't lean back excessively",
+      "Squeeze shoulder blades together at bottom"
+    ],
+    "imageUrl": "/images/exercises/lat-pulldown.jpg",
+    "tags": [
+      "compound",
+      "pull",
+      "machine"
+    ],
+    "alternateExerciseIds": [
+      "back-001",
+      "back-003",
+      "back-005"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Close-Grip_Front_Lat_Pulldown/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Close-Grip_Front_Lat_Pulldown/1.jpg"
+    ]
+  },
+  {
+    "id": "back-003",
+    "name": "Barbell Bent-Over Row",
+    "muscleGroup": "back",
+    "secondaryMuscles": [
+      "arms",
+      "core"
+    ],
+    "equipment": "barbell",
+    "difficulty": "intermediate",
+    "instructions": [
+      "Hold barbell with overhand grip",
+      "Hinge at hips to about 45 degrees",
+      "Pull bar to lower chest/upper abdomen",
+      "Lower with control"
+    ],
+    "tips": [
+      "Keep back flat, don't round your spine",
+      "Drive elbows back, not just pulling with arms"
+    ],
+    "imageUrl": "/images/exercises/barbell-row.jpg",
+    "tags": [
+      "compound",
+      "pull",
+      "upper-body"
+    ],
+    "alternateExerciseIds": [
+      "back-004",
+      "back-005",
+      "back-001"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Rear_Delt_Row/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Rear_Delt_Row/1.jpg"
+    ]
+  },
+  {
+    "id": "back-004",
+    "name": "Dumbbell Single-Arm Row",
+    "muscleGroup": "back",
+    "secondaryMuscles": [
+      "arms"
+    ],
+    "equipment": "dumbbell",
+    "difficulty": "beginner",
+    "instructions": [
+      "Place one knee and hand on a bench",
+      "Hold dumbbell in the other hand",
+      "Pull dumbbell to hip, squeezing shoulder blade",
+      "Lower with control"
+    ],
+    "tips": [
+      "Keep torso parallel to the floor",
+      "Focus on pulling with your back, not your arm"
+    ],
+    "imageUrl": "/images/exercises/db-row.jpg",
+    "tags": [
+      "compound",
+      "pull",
+      "unilateral"
+    ],
+    "alternateExerciseIds": [
+      "back-003",
+      "back-005",
+      "back-002"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Incline_Row/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Incline_Row/1.jpg"
+    ]
+  },
+  {
+    "id": "back-005",
+    "name": "Seated Cable Row",
+    "muscleGroup": "back",
+    "secondaryMuscles": [
+      "arms"
+    ],
+    "equipment": "cable",
+    "difficulty": "beginner",
+    "instructions": [
+      "Sit at cable row machine with feet on platform",
+      "Grab V-bar handle",
+      "Pull handle to abdomen, squeezing shoulder blades",
+      "Extend arms back slowly"
+    ],
+    "tips": [
+      "Don't swing your torso",
+      "Keep chest up throughout"
+    ],
+    "imageUrl": "/images/exercises/cable-row.jpg",
+    "tags": [
+      "compound",
+      "pull",
+      "machine"
+    ],
+    "alternateExerciseIds": [
+      "back-003",
+      "back-004",
+      "back-006"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_Cable_Rows/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Seated_Cable_Rows/1.jpg"
+    ]
+  },
+  {
+    "id": "back-006",
+    "name": "T-Bar Row",
+    "muscleGroup": "back",
+    "secondaryMuscles": [
+      "arms",
+      "core"
+    ],
+    "equipment": "barbell",
+    "difficulty": "intermediate",
+    "instructions": [
+      "Straddle the T-bar or landmine attachment",
+      "Grip the handle and hinge at hips",
+      "Pull the weight toward your chest",
+      "Lower with control"
+    ],
+    "tips": [
+      "Keep a neutral spine",
+      "Great for building back thickness"
+    ],
+    "imageUrl": "/images/exercises/t-bar-row.jpg",
+    "tags": [
+      "compound",
+      "pull",
+      "upper-body"
+    ],
+    "alternateExerciseIds": [
+      "back-003",
+      "back-005",
+      "back-004"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Lying_T-Bar_Row/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Lying_T-Bar_Row/1.jpg"
+    ]
+  },
+  {
+    "id": "back-007",
+    "name": "Face Pulls",
+    "muscleGroup": "back",
+    "secondaryMuscles": [
+      "shoulders"
+    ],
+    "equipment": "cable",
+    "difficulty": "beginner",
+    "instructions": [
+      "Set cable at face height with rope attachment",
+      "Pull rope toward face, separating hands",
+      "Squeeze rear delts and upper back",
+      "Return slowly"
+    ],
+    "tips": [
+      "Excellent for posture and shoulder health",
+      "Keep elbows high"
+    ],
+    "imageUrl": "/images/exercises/face-pulls.jpg",
+    "tags": [
+      "isolation",
+      "pull",
+      "shoulder-health"
+    ],
+    "alternateExerciseIds": [
+      "back-008",
+      "shoulder-005",
+      "back-005"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Face_Pull/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Face_Pull/1.jpg"
+    ]
+  },
+  {
+    "id": "back-008",
+    "name": "Resistance Band Pull-Aparts",
+    "muscleGroup": "back",
+    "secondaryMuscles": [
+      "shoulders"
+    ],
+    "equipment": "resistance-band",
+    "difficulty": "beginner",
+    "instructions": [
+      "Hold band at shoulder height with arms extended",
+      "Pull band apart by squeezing shoulder blades",
+      "Return to start with control"
+    ],
+    "tips": [
+      "Great warm-up exercise",
+      "Keep arms straight throughout"
+    ],
+    "imageUrl": "/images/exercises/band-pull-apart.jpg",
+    "tags": [
+      "isolation",
+      "pull",
+      "no-equipment",
+      "shoulder-health"
+    ],
+    "alternateExerciseIds": [
+      "back-007",
+      "shoulder-005",
+      "back-002"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Band_Pull_Apart/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Band_Pull_Apart/1.jpg"
+    ]
+  },
+  {
+    "id": "shoulder-001",
+    "name": "Overhead Press (Barbell)",
+    "muscleGroup": "shoulders",
+    "secondaryMuscles": [
+      "arms",
+      "core"
+    ],
+    "equipment": "barbell",
+    "difficulty": "intermediate",
+    "instructions": [
+      "Stand with barbell at shoulder height",
+      "Press bar overhead until arms are fully extended",
+      "Lower bar back to shoulders with control"
+    ],
+    "tips": [
+      "Brace your core throughout",
+      "Don't lean back excessively"
+    ],
+    "imageUrl": "/images/exercises/ohp.jpg",
+    "tags": [
+      "compound",
+      "push",
+      "upper-body"
+    ],
+    "alternateExerciseIds": [
+      "shoulder-002",
+      "shoulder-003",
+      "shoulder-004"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Overhead_Slam/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Overhead_Slam/1.jpg"
+    ]
+  },
+  {
+    "id": "shoulder-002",
+    "name": "Dumbbell Shoulder Press",
+    "muscleGroup": "shoulders",
+    "secondaryMuscles": [
+      "arms"
+    ],
+    "equipment": "dumbbell",
+    "difficulty": "intermediate",
+    "instructions": [
+      "Sit or stand with dumbbells at shoulder height",
+      "Press dumbbells overhead",
+      "Lower back to shoulder height"
+    ],
+    "tips": [
+      "Seated version reduces momentum",
+      "Don't clank dumbbells at the top"
+    ],
+    "imageUrl": "/images/exercises/db-shoulder-press.jpg",
+    "tags": [
+      "compound",
+      "push",
+      "upper-body"
+    ],
+    "alternateExerciseIds": [
+      "shoulder-001",
+      "shoulder-003",
+      "shoulder-004"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Shoulder_Press/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Shoulder_Press/1.jpg"
+    ]
+  },
+  {
+    "id": "shoulder-003",
+    "name": "Arnold Press",
+    "muscleGroup": "shoulders",
+    "secondaryMuscles": [
+      "arms"
+    ],
+    "equipment": "dumbbell",
+    "difficulty": "intermediate",
+    "instructions": [
+      "Start with dumbbells in front of face, palms facing you",
+      "Rotate palms outward as you press overhead",
+      "Reverse the rotation on the way down"
+    ],
+    "tips": [
+      "Hits all three delt heads",
+      "Use moderate weight for proper rotation"
+    ],
+    "imageUrl": "/images/exercises/arnold-press.jpg",
+    "tags": [
+      "compound",
+      "push",
+      "upper-body"
+    ],
+    "alternateExerciseIds": [
+      "shoulder-001",
+      "shoulder-002",
+      "shoulder-006"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Kettlebell_Arnold_Press/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Kettlebell_Arnold_Press/1.jpg"
+    ]
+  },
+  {
+    "id": "shoulder-004",
+    "name": "Pike Push-Ups",
+    "muscleGroup": "shoulders",
+    "secondaryMuscles": [
+      "arms",
+      "core"
+    ],
+    "equipment": "bodyweight",
+    "difficulty": "intermediate",
+    "instructions": [
+      "Start in downward dog position with hips high",
+      "Bend elbows and lower head toward the floor",
+      "Push back up to start"
+    ],
+    "tips": [
+      "Great bodyweight alternative for OHP",
+      "Place feet on bench for added difficulty"
+    ],
+    "imageUrl": "/images/exercises/pike-pushups.jpg",
+    "tags": [
+      "compound",
+      "push",
+      "bodyweight",
+      "no-equipment"
+    ],
+    "alternateExerciseIds": [
+      "shoulder-001",
+      "shoulder-002",
+      "shoulder-003"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plyo_Push-up/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plyo_Push-up/1.jpg"
+    ]
+  },
+  {
+    "id": "shoulder-005",
+    "name": "Lateral Raises",
+    "muscleGroup": "shoulders",
+    "secondaryMuscles": [],
+    "equipment": "dumbbell",
+    "difficulty": "beginner",
+    "instructions": [
+      "Stand with dumbbells at your sides",
+      "Raise arms out to the sides until parallel to floor",
+      "Lower slowly back to sides"
+    ],
+    "tips": [
+      "Don't swing \u00e2\u20ac\u201d use lighter weight with strict form",
+      "Lead with elbows, not hands"
+    ],
+    "imageUrl": "/images/exercises/lateral-raises.jpg",
+    "tags": [
+      "isolation",
+      "push",
+      "upper-body"
+    ],
+    "alternateExerciseIds": [
+      "shoulder-006",
+      "shoulder-007",
+      "back-007"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Side_Lateral_Raise/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Side_Lateral_Raise/1.jpg"
+    ]
+  },
+  {
+    "id": "shoulder-006",
+    "name": "Cable Lateral Raises",
+    "muscleGroup": "shoulders",
+    "secondaryMuscles": [],
+    "equipment": "cable",
+    "difficulty": "beginner",
+    "instructions": [
+      "Stand beside a low cable with handle in far hand",
+      "Raise arm out to the side until parallel to floor",
+      "Lower slowly"
+    ],
+    "tips": [
+      "Constant tension throughout the movement",
+      "Better muscle engagement than dumbbells for some"
+    ],
+    "imageUrl": "/images/exercises/cable-lateral-raise.jpg",
+    "tags": [
+      "isolation",
+      "push",
+      "upper-body"
+    ],
+    "alternateExerciseIds": [
+      "shoulder-005",
+      "shoulder-007",
+      "shoulder-003"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Seated_Lateral_Raise/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Seated_Lateral_Raise/1.jpg"
+    ]
+  },
+  {
+    "id": "shoulder-007",
+    "name": "Front Raises",
+    "muscleGroup": "shoulders",
+    "secondaryMuscles": [
+      "chest"
+    ],
+    "equipment": "dumbbell",
+    "difficulty": "beginner",
+    "instructions": [
+      "Stand with dumbbells in front of thighs",
+      "Raise one or both arms straight in front to shoulder height",
+      "Lower with control"
+    ],
+    "tips": [
+      "Targets the anterior deltoid",
+      "Alternate arms to reduce fatigue"
+    ],
+    "imageUrl": "/images/exercises/front-raises.jpg",
+    "tags": [
+      "isolation",
+      "push",
+      "upper-body"
+    ],
+    "alternateExerciseIds": [
+      "shoulder-005",
+      "shoulder-006",
+      "shoulder-001"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Front_Leg_Raises/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Front_Leg_Raises/1.jpg"
+    ]
+  },
+  {
+    "id": "shoulder-008",
+    "name": "Reverse Pec Deck",
+    "muscleGroup": "shoulders",
+    "secondaryMuscles": [
+      "back"
+    ],
+    "equipment": "machine",
+    "difficulty": "beginner",
+    "instructions": [
+      "Sit facing the pad on the pec deck machine",
+      "Grip handles and open arms wide",
+      "Squeeze rear delts at end range",
+      "Return with control"
+    ],
+    "tips": [
+      "Targets rear delts which are often neglected",
+      "Keep a slight bend in elbows"
+    ],
+    "imageUrl": "/images/exercises/reverse-pec-deck.jpg",
+    "tags": [
+      "isolation",
+      "pull",
+      "machine",
+      "shoulder-health"
+    ],
+    "alternateExerciseIds": [
+      "back-007",
+      "back-008",
+      "shoulder-005"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Reverse_Crunch/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Reverse_Crunch/1.jpg"
+    ]
+  },
+  {
+    "id": "legs-001",
+    "name": "Barbell Back Squat",
+    "muscleGroup": "legs",
+    "secondaryMuscles": [
+      "glutes",
+      "core"
+    ],
+    "equipment": "barbell",
+    "difficulty": "intermediate",
+    "instructions": [
+      "Place bar on upper back/traps",
+      "Feet shoulder-width apart, toes slightly out",
+      "Squat down until thighs are parallel or below",
+      "Drive back up through heels"
+    ],
+    "tips": [
+      "Keep chest up and core braced",
+      "Don't let knees cave inward"
+    ],
+    "imageUrl": "/images/exercises/back-squat.jpg",
+    "tags": [
+      "compound",
+      "push",
+      "lower-body"
+    ],
+    "alternateExerciseIds": [
+      "legs-002",
+      "legs-003",
+      "legs-004"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Hack_Squat/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Hack_Squat/1.jpg"
+    ]
+  },
+  {
+    "id": "legs-002",
+    "name": "Goblet Squat",
+    "muscleGroup": "legs",
+    "secondaryMuscles": [
+      "glutes",
+      "core"
+    ],
+    "equipment": "dumbbell",
+    "difficulty": "beginner",
+    "instructions": [
+      "Hold a dumbbell or kettlebell at chest level",
+      "Squat down keeping weight close to body",
+      "Push back up to standing"
+    ],
+    "tips": [
+      "Great for learning squat mechanics",
+      "Keep elbows inside knees at bottom"
+    ],
+    "imageUrl": "/images/exercises/goblet-squat.jpg",
+    "tags": [
+      "compound",
+      "push",
+      "lower-body"
+    ],
+    "alternateExerciseIds": [
+      "legs-001",
+      "legs-003",
+      "legs-005"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Goblet_Squat/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Goblet_Squat/1.jpg"
+    ]
+  },
+  {
+    "id": "legs-003",
+    "name": "Bodyweight Squats",
+    "muscleGroup": "legs",
+    "secondaryMuscles": [
+      "glutes",
+      "core"
+    ],
+    "equipment": "bodyweight",
+    "difficulty": "beginner",
+    "instructions": [
+      "Stand with feet shoulder-width apart",
+      "Extend arms in front for balance",
+      "Squat down until thighs are parallel",
+      "Stand back up"
+    ],
+    "tips": [
+      "Master this before adding weight",
+      "Perfect for high-rep conditioning"
+    ],
+    "imageUrl": "/images/exercises/bw-squats.jpg",
+    "tags": [
+      "compound",
+      "push",
+      "bodyweight",
+      "no-equipment",
+      "lower-body"
+    ],
+    "alternateExerciseIds": [
+      "legs-001",
+      "legs-002",
+      "legs-004"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bodyweight_Squat/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Bodyweight_Squat/1.jpg"
+    ]
+  },
+  {
+    "id": "legs-004",
+    "name": "Leg Press",
+    "muscleGroup": "legs",
+    "secondaryMuscles": [
+      "glutes"
+    ],
+    "equipment": "machine",
+    "difficulty": "beginner",
+    "instructions": [
+      "Sit in leg press machine with feet shoulder-width on platform",
+      "Release safety and lower platform toward chest",
+      "Press back up without locking knees"
+    ],
+    "tips": [
+      "Don't let lower back round off the pad",
+      "Foot placement changes emphasis"
+    ],
+    "imageUrl": "/images/exercises/leg-press.jpg",
+    "tags": [
+      "compound",
+      "push",
+      "machine",
+      "lower-body"
+    ],
+    "alternateExerciseIds": [
+      "legs-001",
+      "legs-002",
+      "legs-005"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Calf_Press_On_The_Leg_Press_Machine/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Calf_Press_On_The_Leg_Press_Machine/1.jpg"
+    ]
+  },
+  {
+    "id": "legs-005",
+    "name": "Bulgarian Split Squat",
+    "muscleGroup": "legs",
+    "secondaryMuscles": [
+      "glutes",
+      "core"
+    ],
+    "equipment": "dumbbell",
+    "difficulty": "intermediate",
+    "instructions": [
+      "Stand lunge-length in front of a bench",
+      "Place rear foot on the bench behind you",
+      "Lower until front thigh is parallel to floor",
+      "Drive back up through front heel"
+    ],
+    "tips": [
+      "Excellent for fixing leg imbalances",
+      "Keep torso upright"
+    ],
+    "imageUrl": "/images/exercises/bulgarian-split-squat.jpg",
+    "tags": [
+      "compound",
+      "push",
+      "unilateral",
+      "lower-body"
+    ],
+    "alternateExerciseIds": [
+      "legs-006",
+      "legs-001",
+      "legs-002"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Side_Split_Squat/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Side_Split_Squat/1.jpg"
+    ]
+  },
+  {
+    "id": "legs-006",
+    "name": "Walking Lunges",
+    "muscleGroup": "legs",
+    "secondaryMuscles": [
+      "glutes",
+      "core"
+    ],
+    "equipment": "bodyweight",
+    "difficulty": "beginner",
+    "instructions": [
+      "Step forward into a lunge",
+      "Lower until both knees are at 90 degrees",
+      "Push off front foot and step forward with the other leg",
+      "Continue alternating"
+    ],
+    "tips": [
+      "Keep torso upright",
+      "Add dumbbells for extra resistance"
+    ],
+    "imageUrl": "/images/exercises/walking-lunges.jpg",
+    "tags": [
+      "compound",
+      "push",
+      "bodyweight",
+      "no-equipment",
+      "lower-body"
+    ],
+    "alternateExerciseIds": [
+      "legs-005",
+      "legs-003",
+      "legs-001"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Walking_Lunge/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Walking_Lunge/1.jpg"
+    ]
+  },
+  {
+    "id": "legs-007",
+    "name": "Romanian Deadlift",
+    "muscleGroup": "legs",
+    "secondaryMuscles": [
+      "glutes",
+      "back"
+    ],
+    "equipment": "barbell",
+    "difficulty": "intermediate",
+    "instructions": [
+      "Hold barbell with overhand grip at hip level",
+      "Hinge at hips, pushing them back",
+      "Lower bar along legs until you feel a hamstring stretch",
+      "Drive hips forward to return to start"
+    ],
+    "tips": [
+      "Keep bar close to your body",
+      "Slight knee bend \u00e2\u20ac\u201d this is a hip hinge, not a squat"
+    ],
+    "imageUrl": "/images/exercises/rdl.jpg",
+    "tags": [
+      "compound",
+      "pull",
+      "lower-body"
+    ],
+    "alternateExerciseIds": [
+      "legs-008",
+      "legs-009",
+      "legs-010"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Romanian_Deadlift/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Romanian_Deadlift/1.jpg"
+    ]
+  },
+  {
+    "id": "legs-008",
+    "name": "Dumbbell Romanian Deadlift",
+    "muscleGroup": "legs",
+    "secondaryMuscles": [
+      "glutes",
+      "back"
+    ],
+    "equipment": "dumbbell",
+    "difficulty": "beginner",
+    "instructions": [
+      "Hold dumbbells in front of thighs",
+      "Hinge at hips, pushing them back",
+      "Lower dumbbells along legs",
+      "Return to standing by driving hips forward"
+    ],
+    "tips": [
+      "Good alternative if barbells aren't available",
+      "Focus on the hip hinge pattern"
+    ],
+    "imageUrl": "/images/exercises/db-rdl.jpg",
+    "tags": [
+      "compound",
+      "pull",
+      "lower-body"
+    ],
+    "alternateExerciseIds": [
+      "legs-007",
+      "legs-009",
+      "legs-010"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Romanian_Deadlift/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Romanian_Deadlift/1.jpg"
+    ]
+  },
+  {
+    "id": "legs-009",
+    "name": "Leg Curl (Machine)",
+    "muscleGroup": "legs",
+    "secondaryMuscles": [],
+    "equipment": "machine",
+    "difficulty": "beginner",
+    "instructions": [
+      "Lie face down on leg curl machine",
+      "Hook ankles under the pad",
+      "Curl pad toward glutes",
+      "Lower with control"
+    ],
+    "tips": [
+      "Isolates the hamstrings",
+      "Don't let hips come off the pad"
+    ],
+    "imageUrl": "/images/exercises/leg-curl.jpg",
+    "tags": [
+      "isolation",
+      "pull",
+      "machine",
+      "lower-body"
+    ],
+    "alternateExerciseIds": [
+      "legs-007",
+      "legs-008",
+      "legs-010"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Ab_Crunch_Machine/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Ab_Crunch_Machine/1.jpg"
+    ]
+  },
+  {
+    "id": "legs-010",
+    "name": "Leg Extension (Machine)",
+    "muscleGroup": "legs",
+    "secondaryMuscles": [],
+    "equipment": "machine",
+    "difficulty": "beginner",
+    "instructions": [
+      "Sit in leg extension machine",
+      "Hook ankles under the pad",
+      "Extend legs until straight",
+      "Lower with control"
+    ],
+    "tips": [
+      "Isolates the quadriceps",
+      "Don't use momentum"
+    ],
+    "imageUrl": "/images/exercises/leg-extension.jpg",
+    "tags": [
+      "isolation",
+      "push",
+      "machine",
+      "lower-body"
+    ],
+    "alternateExerciseIds": [
+      "legs-001",
+      "legs-003",
+      "legs-004"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Extensions/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Leg_Extensions/1.jpg"
+    ]
+  },
+  {
+    "id": "legs-011",
+    "name": "Calf Raises",
+    "muscleGroup": "legs",
+    "secondaryMuscles": [],
+    "equipment": "bodyweight",
+    "difficulty": "beginner",
+    "instructions": [
+      "Stand on edge of a step with heels hanging off",
+      "Rise up onto toes as high as possible",
+      "Lower heels below step level for a stretch",
+      "Repeat"
+    ],
+    "tips": [
+      "Slow and controlled reps work best",
+      "Add weight with dumbbells as needed"
+    ],
+    "imageUrl": "/images/exercises/calf-raises.jpg",
+    "tags": [
+      "isolation",
+      "push",
+      "bodyweight",
+      "lower-body"
+    ],
+    "alternateExerciseIds": [
+      "legs-012",
+      "legs-003"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Calf_Raises_-_With_Bands/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Calf_Raises_-_With_Bands/1.jpg"
+    ]
+  },
+  {
+    "id": "legs-012",
+    "name": "Seated Calf Raise",
+    "muscleGroup": "legs",
+    "secondaryMuscles": [],
+    "equipment": "machine",
+    "difficulty": "beginner",
+    "instructions": [
+      "Sit in seated calf raise machine",
+      "Place balls of feet on platform",
+      "Release safety and rise up onto toes",
+      "Lower with control"
+    ],
+    "tips": [
+      "Targets the soleus muscle specifically",
+      "Pause at the top for peak contraction"
+    ],
+    "imageUrl": "/images/exercises/seated-calf-raise.jpg",
+    "tags": [
+      "isolation",
+      "push",
+      "machine",
+      "lower-body"
+    ],
+    "alternateExerciseIds": [
+      "legs-011",
+      "legs-003"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Seated_Calf_Raise/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Seated_Calf_Raise/1.jpg"
+    ]
+  },
+  {
+    "id": "arms-001",
+    "name": "Barbell Bicep Curl",
+    "muscleGroup": "arms",
+    "secondaryMuscles": [],
+    "equipment": "barbell",
+    "difficulty": "beginner",
+    "instructions": [
+      "Stand with barbell at arm's length, palms facing forward",
+      "Curl bar up by bending elbows",
+      "Squeeze biceps at the top",
+      "Lower with control"
+    ],
+    "tips": [
+      "Keep elbows pinned to your sides",
+      "Don't swing the weight"
+    ],
+    "imageUrl": "/images/exercises/barbell-curl.jpg",
+    "tags": [
+      "isolation",
+      "pull",
+      "upper-body"
+    ],
+    "alternateExerciseIds": [
+      "arms-002",
+      "arms-003",
+      "arms-004"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Bicep_Curl/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Bicep_Curl/1.jpg"
+    ]
+  },
+  {
+    "id": "arms-002",
+    "name": "Dumbbell Bicep Curl",
+    "muscleGroup": "arms",
+    "secondaryMuscles": [],
+    "equipment": "dumbbell",
+    "difficulty": "beginner",
+    "instructions": [
+      "Stand with dumbbells at sides, palms facing forward",
+      "Curl both dumbbells up simultaneously",
+      "Lower with control"
+    ],
+    "tips": [
+      "Can alternate arms for variety",
+      "Supinate wrist at the top for extra contraction"
+    ],
+    "imageUrl": "/images/exercises/db-curl.jpg",
+    "tags": [
+      "isolation",
+      "pull",
+      "upper-body"
+    ],
+    "alternateExerciseIds": [
+      "arms-001",
+      "arms-003",
+      "arms-005"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Bicep_Curl/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dumbbell_Bicep_Curl/1.jpg"
+    ]
+  },
+  {
+    "id": "arms-003",
+    "name": "Hammer Curls",
+    "muscleGroup": "arms",
+    "secondaryMuscles": [],
+    "equipment": "dumbbell",
+    "difficulty": "beginner",
+    "instructions": [
+      "Stand with dumbbells at sides, palms facing each other",
+      "Curl dumbbells up maintaining neutral grip",
+      "Lower with control"
+    ],
+    "tips": [
+      "Targets brachialis and forearms more",
+      "Great for arm thickness"
+    ],
+    "imageUrl": "/images/exercises/hammer-curls.jpg",
+    "tags": [
+      "isolation",
+      "pull",
+      "upper-body"
+    ],
+    "alternateExerciseIds": [
+      "arms-001",
+      "arms-002",
+      "arms-004"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Hammer_Curls_-_Rope_Attachment/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Hammer_Curls_-_Rope_Attachment/1.jpg"
+    ]
+  },
+  {
+    "id": "arms-004",
+    "name": "Cable Bicep Curl",
+    "muscleGroup": "arms",
+    "secondaryMuscles": [],
+    "equipment": "cable",
+    "difficulty": "beginner",
+    "instructions": [
+      "Stand facing a low cable with straight bar attachment",
+      "Curl bar up to chest level",
+      "Lower slowly"
+    ],
+    "tips": [
+      "Constant tension from the cable",
+      "Great finisher for biceps"
+    ],
+    "imageUrl": "/images/exercises/cable-curl.jpg",
+    "tags": [
+      "isolation",
+      "pull",
+      "upper-body"
+    ],
+    "alternateExerciseIds": [
+      "arms-001",
+      "arms-002",
+      "arms-003"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Machine_Bicep_Curl/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Machine_Bicep_Curl/1.jpg"
+    ]
+  },
+  {
+    "id": "arms-005",
+    "name": "Chin-Ups",
+    "muscleGroup": "arms",
+    "secondaryMuscles": [
+      "back"
+    ],
+    "equipment": "bodyweight",
+    "difficulty": "intermediate",
+    "instructions": [
+      "Hang from bar with underhand grip, shoulder-width",
+      "Pull yourself up until chin clears the bar",
+      "Lower with control"
+    ],
+    "tips": [
+      "Great compound bicep exercise",
+      "Use a band for assistance if needed"
+    ],
+    "imageUrl": "/images/exercises/chin-ups.jpg",
+    "tags": [
+      "compound",
+      "pull",
+      "bodyweight"
+    ],
+    "alternateExerciseIds": [
+      "arms-001",
+      "arms-002",
+      "back-001"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Chin-Up/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Chin-Up/1.jpg"
+    ]
+  },
+  {
+    "id": "arms-006",
+    "name": "Tricep Pushdown",
+    "muscleGroup": "arms",
+    "secondaryMuscles": [],
+    "equipment": "cable",
+    "difficulty": "beginner",
+    "instructions": [
+      "Stand at cable machine with rope or bar attachment at top",
+      "Push handle down by extending elbows",
+      "Squeeze triceps at bottom",
+      "Return to start"
+    ],
+    "tips": [
+      "Keep elbows pinned to sides",
+      "Don't lean into it"
+    ],
+    "imageUrl": "/images/exercises/tricep-pushdown.jpg",
+    "tags": [
+      "isolation",
+      "push",
+      "upper-body"
+    ],
+    "alternateExerciseIds": [
+      "arms-007",
+      "arms-008",
+      "arms-009"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Triceps_Pushdown/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Triceps_Pushdown/1.jpg"
+    ]
+  },
+  {
+    "id": "arms-007",
+    "name": "Skull Crushers",
+    "muscleGroup": "arms",
+    "secondaryMuscles": [],
+    "equipment": "barbell",
+    "difficulty": "intermediate",
+    "instructions": [
+      "Lie on bench with barbell or EZ bar overhead",
+      "Lower bar toward forehead by bending elbows",
+      "Extend arms back to start"
+    ],
+    "tips": [
+      "Keep upper arms stationary",
+      "Use an EZ bar for wrist comfort"
+    ],
+    "imageUrl": "/images/exercises/skull-crushers.jpg",
+    "tags": [
+      "isolation",
+      "push",
+      "upper-body"
+    ],
+    "alternateExerciseIds": [
+      "arms-006",
+      "arms-008",
+      "arms-009"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Band_Skull_Crusher/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Band_Skull_Crusher/1.jpg"
+    ]
+  },
+  {
+    "id": "arms-008",
+    "name": "Overhead Tricep Extension",
+    "muscleGroup": "arms",
+    "secondaryMuscles": [],
+    "equipment": "dumbbell",
+    "difficulty": "beginner",
+    "instructions": [
+      "Hold one dumbbell with both hands behind head",
+      "Extend arms overhead",
+      "Lower dumbbell behind head by bending elbows",
+      "Extend back up"
+    ],
+    "tips": [
+      "Keep elbows pointing forward",
+      "Great stretch on the long head of triceps"
+    ],
+    "imageUrl": "/images/exercises/overhead-tricep-extension.jpg",
+    "tags": [
+      "isolation",
+      "push",
+      "upper-body"
+    ],
+    "alternateExerciseIds": [
+      "arms-006",
+      "arms-007",
+      "arms-009"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Sled_Overhead_Triceps_Extension/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Sled_Overhead_Triceps_Extension/1.jpg"
+    ]
+  },
+  {
+    "id": "arms-009",
+    "name": "Diamond Push-Ups",
+    "muscleGroup": "arms",
+    "secondaryMuscles": [
+      "chest"
+    ],
+    "equipment": "bodyweight",
+    "difficulty": "intermediate",
+    "instructions": [
+      "Get in push-up position with hands together forming a diamond",
+      "Lower chest toward hands",
+      "Push back up"
+    ],
+    "tips": [
+      "Amazing bodyweight tricep exercise",
+      "Keep elbows close to body"
+    ],
+    "imageUrl": "/images/exercises/diamond-pushups.jpg",
+    "tags": [
+      "compound",
+      "push",
+      "bodyweight",
+      "no-equipment"
+    ],
+    "alternateExerciseIds": [
+      "arms-006",
+      "arms-008",
+      "chest-003"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Handstand_Push-Ups/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Handstand_Push-Ups/1.jpg"
+    ]
+  },
+  {
+    "id": "arms-010",
+    "name": "Concentration Curl",
+    "muscleGroup": "arms",
+    "secondaryMuscles": [],
+    "equipment": "dumbbell",
+    "difficulty": "beginner",
+    "instructions": [
+      "Sit on bench, rest elbow on inner thigh",
+      "Curl dumbbell up toward shoulder",
+      "Squeeze bicep at top",
+      "Lower with control"
+    ],
+    "tips": [
+      "Great for isolating the bicep peak",
+      "No swinging possible in this position"
+    ],
+    "imageUrl": "/images/exercises/concentration-curl.jpg",
+    "tags": [
+      "isolation",
+      "pull",
+      "upper-body"
+    ],
+    "alternateExerciseIds": [
+      "arms-001",
+      "arms-002",
+      "arms-004"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Concentration_Curls/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Concentration_Curls/1.jpg"
+    ]
+  },
+  {
+    "id": "core-001",
+    "name": "Plank",
+    "muscleGroup": "core",
+    "secondaryMuscles": [
+      "shoulders"
+    ],
+    "equipment": "bodyweight",
+    "difficulty": "beginner",
+    "instructions": [
+      "Get into forearm plank position",
+      "Keep body in a straight line from head to heels",
+      "Hold the position, breathing steadily"
+    ],
+    "tips": [
+      "Don't let hips sag or pike up",
+      "Engage glutes and quads too"
+    ],
+    "imageUrl": "/images/exercises/plank.jpg",
+    "tags": [
+      "isometric",
+      "bodyweight",
+      "no-equipment",
+      "core"
+    ],
+    "alternateExerciseIds": [
+      "core-002",
+      "core-003",
+      "core-004"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Plank/1.jpg"
+    ]
+  },
+  {
+    "id": "core-002",
+    "name": "Dead Bug",
+    "muscleGroup": "core",
+    "secondaryMuscles": [],
+    "equipment": "bodyweight",
+    "difficulty": "beginner",
+    "instructions": [
+      "Lie on back with arms extended toward ceiling",
+      "Lift knees to 90 degrees",
+      "Extend opposite arm and leg simultaneously",
+      "Return and repeat on other side"
+    ],
+    "tips": [
+      "Press lower back into the floor",
+      "Excellent for core stability without back strain"
+    ],
+    "imageUrl": "/images/exercises/dead-bug.jpg",
+    "tags": [
+      "dynamic",
+      "bodyweight",
+      "no-equipment",
+      "core"
+    ],
+    "alternateExerciseIds": [
+      "core-001",
+      "core-003",
+      "core-005"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dead_Bug/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Dead_Bug/1.jpg"
+    ]
+  },
+  {
+    "id": "core-003",
+    "name": "Bicycle Crunches",
+    "muscleGroup": "core",
+    "secondaryMuscles": [],
+    "equipment": "bodyweight",
+    "difficulty": "beginner",
+    "instructions": [
+      "Lie on back with hands behind head",
+      "Bring one knee toward chest while rotating torso",
+      "Touch opposite elbow to knee",
+      "Alternate sides in a pedaling motion"
+    ],
+    "tips": [
+      "Don't pull on your neck",
+      "Focus on the rotation, not just the crunch"
+    ],
+    "imageUrl": "/images/exercises/bicycle-crunches.jpg",
+    "tags": [
+      "dynamic",
+      "bodyweight",
+      "no-equipment",
+      "core"
+    ],
+    "alternateExerciseIds": [
+      "core-001",
+      "core-002",
+      "core-004"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Crunches/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Crunches/1.jpg"
+    ]
+  },
+  {
+    "id": "core-004",
+    "name": "Hanging Leg Raises",
+    "muscleGroup": "core",
+    "secondaryMuscles": [
+      "arms"
+    ],
+    "equipment": "bodyweight",
+    "difficulty": "advanced",
+    "instructions": [
+      "Hang from a pull-up bar",
+      "Raise legs until thighs are parallel to floor (or higher)",
+      "Lower with control \u00e2\u20ac\u201d don't swing"
+    ],
+    "tips": [
+      "Bend knees to make it easier",
+      "For advanced: raise legs all the way to the bar"
+    ],
+    "imageUrl": "/images/exercises/hanging-leg-raises.jpg",
+    "tags": [
+      "dynamic",
+      "bodyweight",
+      "core"
+    ],
+    "alternateExerciseIds": [
+      "core-001",
+      "core-003",
+      "core-005"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hanging_Leg_Raise/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Hanging_Leg_Raise/1.jpg"
+    ]
+  },
+  {
+    "id": "core-005",
+    "name": "Ab Wheel Rollout",
+    "muscleGroup": "core",
+    "secondaryMuscles": [
+      "shoulders",
+      "back"
+    ],
+    "equipment": "none",
+    "difficulty": "intermediate",
+    "instructions": [
+      "Kneel on the floor holding ab wheel",
+      "Roll forward extending your body",
+      "Go as far as you can with control",
+      "Roll back to starting position"
+    ],
+    "tips": [
+      "Keep core tight \u00e2\u20ac\u201d don't let back arch",
+      "Start with short rollouts and progress"
+    ],
+    "imageUrl": "/images/exercises/ab-wheel.jpg",
+    "tags": [
+      "dynamic",
+      "core"
+    ],
+    "alternateExerciseIds": [
+      "core-001",
+      "core-004",
+      "core-006"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Ab_Roller/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Ab_Roller/1.jpg"
+    ]
+  },
+  {
+    "id": "core-006",
+    "name": "Russian Twist",
+    "muscleGroup": "core",
+    "secondaryMuscles": [],
+    "equipment": "bodyweight",
+    "difficulty": "beginner",
+    "instructions": [
+      "Sit with knees bent, feet slightly off the floor",
+      "Lean back slightly and clasp hands together",
+      "Rotate torso side to side",
+      "Touch hands to floor beside each hip"
+    ],
+    "tips": [
+      "Hold a weight for extra difficulty",
+      "Keep feet off the ground for more challenge"
+    ],
+    "imageUrl": "/images/exercises/russian-twist.jpg",
+    "tags": [
+      "dynamic",
+      "bodyweight",
+      "no-equipment",
+      "core"
+    ],
+    "alternateExerciseIds": [
+      "core-003",
+      "core-002",
+      "core-007"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Russian_Twists/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Cable_Russian_Twists/1.jpg"
+    ]
+  },
+  {
+    "id": "core-007",
+    "name": "Mountain Climbers",
+    "muscleGroup": "core",
+    "secondaryMuscles": [
+      "shoulders",
+      "legs"
+    ],
+    "equipment": "bodyweight",
+    "difficulty": "beginner",
+    "instructions": [
+      "Start in high plank position",
+      "Drive one knee toward chest",
+      "Quickly switch legs",
+      "Continue alternating at a fast pace"
+    ],
+    "tips": [
+      "Keep hips level \u00e2\u20ac\u201d don't bounce",
+      "Great for core + cardio"
+    ],
+    "imageUrl": "/images/exercises/mountain-climbers.jpg",
+    "tags": [
+      "dynamic",
+      "bodyweight",
+      "no-equipment",
+      "core",
+      "cardio"
+    ],
+    "alternateExerciseIds": [
+      "core-001",
+      "core-006",
+      "core-003"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Mountain_Climbers/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Mountain_Climbers/1.jpg"
+    ]
+  },
+  {
+    "id": "core-008",
+    "name": "Cable Woodchop",
+    "muscleGroup": "core",
+    "secondaryMuscles": [
+      "shoulders"
+    ],
+    "equipment": "cable",
+    "difficulty": "intermediate",
+    "instructions": [
+      "Set cable at high position",
+      "Stand sideways to the machine",
+      "Pull handle diagonally across body from high to low",
+      "Control the return"
+    ],
+    "tips": [
+      "Rotate through your torso, not just your arms",
+      "Great for rotational core strength"
+    ],
+    "imageUrl": "/images/exercises/cable-woodchop.jpg",
+    "tags": [
+      "dynamic",
+      "cable",
+      "core"
+    ],
+    "alternateExerciseIds": [
+      "core-006",
+      "core-007",
+      "core-003"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Standing_Cable_Wood_Chop/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Standing_Cable_Wood_Chop/1.jpg"
+    ]
+  },
+  {
+    "id": "glutes-001",
+    "name": "Barbell Hip Thrust",
+    "muscleGroup": "glutes",
+    "secondaryMuscles": [
+      "legs"
+    ],
+    "equipment": "barbell",
+    "difficulty": "intermediate",
+    "instructions": [
+      "Sit on floor with upper back against a bench",
+      "Roll barbell over hips",
+      "Drive hips up by squeezing glutes",
+      "Lower with control"
+    ],
+    "tips": [
+      "Best glute isolation exercise",
+      "Push through heels and squeeze at the top"
+    ],
+    "imageUrl": "/images/exercises/hip-thrust.jpg",
+    "tags": [
+      "compound",
+      "push",
+      "lower-body"
+    ],
+    "alternateExerciseIds": [
+      "glutes-002",
+      "glutes-003",
+      "glutes-004"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Hip_Thrust/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Hip_Thrust/1.jpg"
+    ]
+  },
+  {
+    "id": "glutes-002",
+    "name": "Glute Bridge",
+    "muscleGroup": "glutes",
+    "secondaryMuscles": [
+      "legs",
+      "core"
+    ],
+    "equipment": "bodyweight",
+    "difficulty": "beginner",
+    "instructions": [
+      "Lie on back with knees bent, feet flat on floor",
+      "Drive hips up by squeezing glutes",
+      "Hold briefly at the top",
+      "Lower with control"
+    ],
+    "tips": [
+      "Bodyweight version of hip thrust",
+      "Great warm-up exercise"
+    ],
+    "imageUrl": "/images/exercises/glute-bridge.jpg",
+    "tags": [
+      "compound",
+      "push",
+      "bodyweight",
+      "no-equipment",
+      "lower-body"
+    ],
+    "alternateExerciseIds": [
+      "glutes-001",
+      "glutes-003",
+      "glutes-004"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Glute_Bridge/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Glute_Bridge/1.jpg"
+    ]
+  },
+  {
+    "id": "glutes-003",
+    "name": "Cable Kickback",
+    "muscleGroup": "glutes",
+    "secondaryMuscles": [],
+    "equipment": "cable",
+    "difficulty": "beginner",
+    "instructions": [
+      "Attach ankle strap to low cable",
+      "Face the machine and kick one leg back",
+      "Squeeze glute at full extension",
+      "Return and repeat"
+    ],
+    "tips": [
+      "Don't arch your lower back",
+      "Focus on glute contraction, not just range of motion"
+    ],
+    "imageUrl": "/images/exercises/cable-kickback.jpg",
+    "tags": [
+      "isolation",
+      "push",
+      "lower-body"
+    ],
+    "alternateExerciseIds": [
+      "glutes-001",
+      "glutes-002",
+      "glutes-004"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/One-Legged_Cable_Kickback/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/One-Legged_Cable_Kickback/1.jpg"
+    ]
+  },
+  {
+    "id": "glutes-004",
+    "name": "Sumo Deadlift",
+    "muscleGroup": "glutes",
+    "secondaryMuscles": [
+      "legs",
+      "back"
+    ],
+    "equipment": "barbell",
+    "difficulty": "intermediate",
+    "instructions": [
+      "Stand with wide stance, toes turned out",
+      "Grip barbell between legs",
+      "Squat down and grip the bar",
+      "Drive up by extending hips and knees"
+    ],
+    "tips": [
+      "Wide stance emphasizes glutes and inner thighs",
+      "Keep chest up throughout"
+    ],
+    "imageUrl": "/images/exercises/sumo-deadlift.jpg",
+    "tags": [
+      "compound",
+      "pull",
+      "lower-body"
+    ],
+    "alternateExerciseIds": [
+      "glutes-001",
+      "legs-007",
+      "glutes-002"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Reverse_Band_Sumo_Deadlift/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Reverse_Band_Sumo_Deadlift/1.jpg"
+    ]
+  },
+  {
+    "id": "full-body-001",
+    "name": "Barbell Deadlift",
+    "muscleGroup": "full-body",
+    "secondaryMuscles": [
+      "back",
+      "legs",
+      "glutes",
+      "core"
+    ],
+    "equipment": "barbell",
+    "difficulty": "intermediate",
+    "instructions": [
+      "Stand with feet hip-width, bar over mid-foot",
+      "Hinge and grip bar just outside knees",
+      "Brace core and drive up by extending hips and knees",
+      "Stand tall, then lower with control"
+    ],
+    "tips": [
+      "Keep bar close to body throughout",
+      "Don't round your lower back"
+    ],
+    "imageUrl": "/images/exercises/deadlift.jpg",
+    "tags": [
+      "compound",
+      "pull",
+      "full-body"
+    ],
+    "alternateExerciseIds": [
+      "full-body-002",
+      "legs-007",
+      "glutes-004"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Deadlift/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Deadlift/1.jpg"
+    ]
+  },
+  {
+    "id": "full-body-002",
+    "name": "Kettlebell Swing",
+    "muscleGroup": "full-body",
+    "secondaryMuscles": [
+      "glutes",
+      "legs",
+      "core",
+      "shoulders"
+    ],
+    "equipment": "kettlebell",
+    "difficulty": "intermediate",
+    "instructions": [
+      "Stand with feet wider than shoulders, kettlebell on floor",
+      "Hike kettlebell back between legs",
+      "Drive hips forward explosively to swing kettlebell to chest height",
+      "Let it swing back and repeat"
+    ],
+    "tips": [
+      "Power comes from hips, not arms",
+      "Great for power and conditioning"
+    ],
+    "imageUrl": "/images/exercises/kb-swing.jpg",
+    "tags": [
+      "compound",
+      "full-body",
+      "explosive"
+    ],
+    "alternateExerciseIds": [
+      "full-body-001",
+      "full-body-003",
+      "glutes-001"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/One-Arm_Kettlebell_Swings/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/One-Arm_Kettlebell_Swings/1.jpg"
+    ]
+  },
+  {
+    "id": "full-body-003",
+    "name": "Burpees",
+    "muscleGroup": "full-body",
+    "secondaryMuscles": [
+      "chest",
+      "legs",
+      "core"
+    ],
+    "equipment": "bodyweight",
+    "difficulty": "intermediate",
+    "instructions": [
+      "Start standing",
+      "Drop into a squat, place hands on floor",
+      "Jump feet back to plank position",
+      "Do a push-up, jump feet forward, then jump up with arms overhead"
+    ],
+    "tips": [
+      "Modify by stepping back instead of jumping",
+      "Great conditioning exercise"
+    ],
+    "imageUrl": "/images/exercises/burpees.jpg",
+    "tags": [
+      "compound",
+      "full-body",
+      "bodyweight",
+      "no-equipment",
+      "cardio"
+    ],
+    "alternateExerciseIds": [
+      "full-body-002",
+      "core-007",
+      "full-body-004"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Board_Press/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Board_Press/1.jpg"
+    ]
+  },
+  {
+    "id": "full-body-004",
+    "name": "Thrusters",
+    "muscleGroup": "full-body",
+    "secondaryMuscles": [
+      "legs",
+      "shoulders",
+      "core"
+    ],
+    "equipment": "dumbbell",
+    "difficulty": "intermediate",
+    "instructions": [
+      "Hold dumbbells at shoulder height",
+      "Squat down",
+      "As you stand up, press dumbbells overhead in one fluid motion",
+      "Lower dumbbells back to shoulders as you squat again"
+    ],
+    "tips": [
+      "Combine squat and press seamlessly",
+      "Start light \u00e2\u20ac\u201d these are deceptively hard"
+    ],
+    "imageUrl": "/images/exercises/thrusters.jpg",
+    "tags": [
+      "compound",
+      "full-body",
+      "cardio"
+    ],
+    "alternateExerciseIds": [
+      "full-body-003",
+      "legs-001",
+      "shoulder-002"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Squat_To_A_Bench/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Barbell_Squat_To_A_Bench/1.jpg"
+    ]
+  },
+  {
+    "id": "full-body-005",
+    "name": "Clean and Press",
+    "muscleGroup": "full-body",
+    "secondaryMuscles": [
+      "legs",
+      "back",
+      "shoulders",
+      "core"
+    ],
+    "equipment": "barbell",
+    "difficulty": "advanced",
+    "instructions": [
+      "Start with barbell on floor",
+      "Pull bar explosively to catch at shoulders (clean)",
+      "Press bar overhead",
+      "Lower to shoulders then back to floor"
+    ],
+    "tips": [
+      "Olympic lift \u00e2\u20ac\u201d technique is crucial",
+      "Start with just the bar to learn the pattern"
+    ],
+    "imageUrl": "/images/exercises/clean-and-press.jpg",
+    "tags": [
+      "compound",
+      "full-body",
+      "explosive"
+    ],
+    "alternateExerciseIds": [
+      "full-body-002",
+      "full-body-004",
+      "full-body-001"
+    ],
+    "imageUrls": [
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Clean/0.jpg",
+      "https://raw.githubusercontent.com/yuhonas/free-exercise-db/main/exercises/Clean/1.jpg"
+    ]
+  }
+]

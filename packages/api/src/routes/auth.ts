@@ -2,7 +2,8 @@ import { Router } from 'express';
 import bcrypt from 'bcryptjs';
 import jwt from 'jsonwebtoken';
 import { z } from 'zod';
-import { v4 as uuidv4 } from 'uuid';
+import { eq } from 'drizzle-orm';
+import { db, schema } from '@vibefit/core';
 import { JWT_SECRET, authenticate } from '../middleware/auth.js';
 import { AppError } from '../middleware/errorHandler.js';
 
@@ -26,43 +27,45 @@ const loginSchema = z.object({
 function generateTokens(userId: string) {
   const accessToken = jwt.sign({ userId }, JWT_SECRET, { expiresIn: ACCESS_TOKEN_EXPIRY });
   const refreshToken = jwt.sign({ userId }, REFRESH_SECRET, { expiresIn: REFRESH_TOKEN_EXPIRY });
-  return { accessToken, refreshToken, expiresIn: 900 }; // 15 min in seconds
+  return { accessToken, refreshToken, expiresIn: 900 };
 }
-
-// TODO: Replace with database queries once @vibefit/core is wired
-// Temporary in-memory store for bootstrapping
-const usersStore: Map<string, { id: string; email: string; name: string; passwordHash: string }> = new Map();
-
-// Seed demo user
-(async () => {
-  const hash = await bcrypt.hash('password123', 12);
-  usersStore.set('demo@vibefit.app', {
-    id: 'demo-user-1',
-    email: 'demo@vibefit.app',
-    name: 'Demo User',
-    passwordHash: hash,
-  });
-})();
 
 authRouter.post('/register', async (req, res, next) => {
   try {
     const body = registerSchema.parse(req.body);
 
-    if (usersStore.has(body.email)) {
+    const existing = await db.select({ id: schema.users.id })
+      .from(schema.users)
+      .where(eq(schema.users.email, body.email))
+      .limit(1);
+
+    if (existing.length > 0) {
       throw new AppError(409, 'EMAIL_EXISTS', 'An account with this email already exists');
     }
 
     const passwordHash = await bcrypt.hash(body.password, 12);
-    const id = uuidv4();
-    const user = { id, email: body.email, name: body.name, passwordHash };
-    usersStore.set(body.email, user);
+    const [user] = await db.insert(schema.users).values({
+      email: body.email,
+      name: body.name,
+      passwordHash,
+    }).returning();
 
-    const tokens = generateTokens(id);
+    // Create empty profile
+    await db.insert(schema.userProfiles).values({ userId: user.id });
+    // Create streak record
+    await db.insert(schema.streaks).values({ userId: user.id });
+
+    const tokens = generateTokens(user.id);
+
+    // Store refresh token
+    await db.update(schema.users)
+      .set({ refreshToken: tokens.refreshToken })
+      .where(eq(schema.users.id, user.id));
 
     res.status(201).json({
       success: true,
       data: {
-        user: { id, email: body.email, name: body.name, avatarUrl: null, createdAt: new Date().toISOString(), updatedAt: new Date().toISOString() },
+        user: { id: user.id, email: user.email, name: user.name, avatarUrl: user.avatarUrl, createdAt: user.createdAt, updatedAt: user.updatedAt },
         tokens,
       },
     });
@@ -74,7 +77,11 @@ authRouter.post('/register', async (req, res, next) => {
 authRouter.post('/login', async (req, res, next) => {
   try {
     const body = loginSchema.parse(req.body);
-    const user = usersStore.get(body.email);
+
+    const [user] = await db.select()
+      .from(schema.users)
+      .where(eq(schema.users.email, body.email))
+      .limit(1);
 
     if (!user) {
       throw new AppError(401, 'INVALID_CREDENTIALS', 'Invalid email or password');
@@ -87,10 +94,15 @@ authRouter.post('/login', async (req, res, next) => {
 
     const tokens = generateTokens(user.id);
 
+    // Store refresh token
+    await db.update(schema.users)
+      .set({ refreshToken: tokens.refreshToken, updatedAt: new Date() })
+      .where(eq(schema.users.id, user.id));
+
     res.json({
       success: true,
       data: {
-        user: { id: user.id, email: user.email, name: user.name, avatarUrl: null, createdAt: new Date().toISOString(), updatedAt: new Date().toISOString() },
+        user: { id: user.id, email: user.email, name: user.name, avatarUrl: user.avatarUrl, createdAt: user.createdAt, updatedAt: user.updatedAt },
         tokens,
       },
     });
@@ -107,7 +119,23 @@ authRouter.post('/refresh', async (req, res, next) => {
     }
 
     const payload = jwt.verify(refreshToken, REFRESH_SECRET) as { userId: string };
+
+    // Validate stored refresh token matches
+    const [user] = await db.select({ id: schema.users.id, refreshToken: schema.users.refreshToken })
+      .from(schema.users)
+      .where(eq(schema.users.id, payload.userId))
+      .limit(1);
+
+    if (!user || user.refreshToken !== refreshToken) {
+      throw new AppError(401, 'INVALID_TOKEN', 'Refresh token is invalid or revoked');
+    }
+
     const tokens = generateTokens(payload.userId);
+
+    // Rotate refresh token
+    await db.update(schema.users)
+      .set({ refreshToken: tokens.refreshToken })
+      .where(eq(schema.users.id, payload.userId));
 
     res.json({
       success: true,
@@ -122,23 +150,26 @@ authRouter.post('/refresh', async (req, res, next) => {
   }
 });
 
-authRouter.get('/me', authenticate, (req, res) => {
-  // Find user by ID
-  for (const user of usersStore.values()) {
-    if (user.id === req.userId) {
-      res.json({
-        success: true,
-        data: {
-          id: user.id,
-          email: user.email,
-          name: user.name,
-          avatarUrl: null,
-          createdAt: new Date().toISOString(),
-          updatedAt: new Date().toISOString(),
-        },
-      });
-      return;
+authRouter.get('/me', authenticate, async (req, res, next) => {
+  try {
+    const [user] = await db.select({
+      id: schema.users.id,
+      email: schema.users.email,
+      name: schema.users.name,
+      avatarUrl: schema.users.avatarUrl,
+      createdAt: schema.users.createdAt,
+      updatedAt: schema.users.updatedAt,
+    })
+      .from(schema.users)
+      .where(eq(schema.users.id, req.userId!))
+      .limit(1);
+
+    if (!user) {
+      throw new AppError(404, 'NOT_FOUND', 'User not found');
     }
+
+    res.json({ success: true, data: user });
+  } catch (err) {
+    next(err);
   }
-  res.status(404).json({ success: false, error: { code: 'NOT_FOUND', message: 'User not found' } });
 });
