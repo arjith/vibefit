@@ -3,6 +3,7 @@ import { eq, and, inArray } from 'drizzle-orm';
 import { db, schema } from '@vibefit/core';
 import { authenticate } from '../middleware/auth.js';
 import { AppError } from '../middleware/errorHandler.js';
+import { generateRoutinePreview, persistRoutine, type GenerateRoutineRequest } from '../services/routineGenerator.js';
 
 export const routineRouter = Router();
 
@@ -97,11 +98,31 @@ routineRouter.delete('/:id', authenticate, async (req, res, next) => {
   }
 });
 
-// Preview and Generate will be implemented with the routine generator engine
-routineRouter.post('/preview', (_req, res) => {
-  res.json({ success: true, data: null, message: 'Routine generator coming in Phase 1.3' });
+// Preview: generate routine without saving (no auth required)
+routineRouter.post('/preview', async (req, res, next) => {
+  try {
+    const body = req.body as GenerateRoutineRequest;
+    if (!body.goal || !body.daysPerWeek || !body.sessionDurationMin || !body.fitnessLevel) {
+      throw new AppError(400, 'VALIDATION_ERROR', 'Missing required fields: goal, daysPerWeek, sessionDurationMin, fitnessLevel');
+    }
+    const preview = await generateRoutinePreview(body);
+    res.json({ success: true, data: preview });
+  } catch (err) {
+    next(err);
+  }
 });
 
-routineRouter.post('/generate', authenticate, (_req, res) => {
-  res.json({ success: true, data: null, message: 'Routine generator coming in Phase 1.3' });
+// Generate: preview + persist to DB (auth required)
+routineRouter.post('/generate', authenticate, async (req, res, next) => {
+  try {
+    const body = req.body as GenerateRoutineRequest;
+    if (!body.goal || !body.daysPerWeek || !body.sessionDurationMin || !body.fitnessLevel) {
+      throw new AppError(400, 'VALIDATION_ERROR', 'Missing required fields: goal, daysPerWeek, sessionDurationMin, fitnessLevel');
+    }
+    const preview = await generateRoutinePreview(body);
+    const routine = await persistRoutine(preview, req.userId!);
+    res.status(201).json({ success: true, data: routine });
+  } catch (err) {
+    next(err);
+  }
 });
