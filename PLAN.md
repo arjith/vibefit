@@ -1,7 +1,7 @@
 # VibeFit — Implementation Plan & Progress Tracker
 
 > **Status:** 🚧 IN PROGRESS — Phase 1 Core Loop in progress — pushed to GitHub  
-> **Last Updated:** 2026-02-21  
+> **Last Updated:** 2026-02-22  
 > **Framework:** Jobs-to-Be-Done (JTBD) × Entity State Machines  
 > **Architecture:** pnpm Monorepo → `@vibefit/{shared,ui,core,api,web,ml,agent}`
 
@@ -70,13 +70,13 @@ ERROR → retry (exp backoff: 1s→2s→4s, max 3) → LOADING
 
 | # | Task | Status | Depends | Verification |
 |---|------|--------|---------|-------------|
-| 1.1 | Onboarding wizard (8 screens, per-step persistence, profile creation) | ⬜ | 0.2,0.5 | E2E: onboard → profile → routine |
+| 1.1 | Onboarding wizard (7 steps, per-step persistence, profile creation) | ✅ | 0.2,0.5 | Profile API + Redux + 7-step wizard + redirect |
 | 1.2 | Exercise library (debounced search, URL-synced filters, skeleton, pagination) | ✅ | 0.2,0.5 | Filter → URL → refresh preserves |
-| 1.3 | Routine builder (7-step wizard, multi-week, progressive overload, editing) | ⬜ | 0.5,1.2 | Generated routine has progressive overload |
+| 1.3 | Routine builder (7-step wizard, multi-week, progressive overload, editing) | ✅ | 0.5,1.2 | Generated routine has progressive overload |
 | 1.4 | Routine management (calendar view, deep-link, delete confirm, duplicate) | ⬜ | 0.5,1.3 | URL `/routines/:id/week/2/day/3` works |
-| 1.5 | Workout execution (full-screen, set logging, rest timer, swap, auto-save) | ⬜ | 0.2,0.5,1.3 | Log sets → auto-save → timer → complete |
+| 1.5 | Workout execution (full-screen, set logging, rest timer, swap, auto-save) | ✅ | 0.2,0.5,1.3 | API + Redux + execution page + rest timer + RPE/mood |
 | 1.6 | Cardio tracking (timer modes, effort logging, Surprise Me upgrade) | ✅ | 0.2,0.5 | Library + detail + search/filter |
-| 1.7 | Dashboard (today's workout, streak, weekly progress, muscle map) | 🚧 | 0.5,1.5 | Shows data for 3+ workouts |
+| 1.7 | Dashboard (today's workout, streak, weekly progress, muscle map) | ✅ | 0.5,1.5 | Real workout data + onboarding redirect + quick actions |
 
 ## Phase 2: Retention Engine (JTBD 4–5)
 

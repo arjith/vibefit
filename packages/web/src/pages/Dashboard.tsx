@@ -1,6 +1,8 @@
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import { useAppSelector } from '../hooks/useRedux';
+import { Link, useNavigate } from 'react-router-dom';
+import { useAppSelector, useAppDispatch } from '../hooks/useRedux';
+import { fetchProfile } from '../store/profileSlice';
+import { fetchSessions } from '../store/workoutSlice';
 import { api } from '../lib/api';
 
 interface DashboardStats {
@@ -13,8 +15,24 @@ interface DashboardStats {
 
 export function Dashboard() {
   const user = useAppSelector((s) => s.auth.user);
+  const profile = useAppSelector((s) => s.profile.profile);
+  const sessions = useAppSelector((s) => s.workout.sessions);
+  const dispatch = useAppDispatch();
   const [stats, setStats] = useState<DashboardStats | null>(null);
   const [loading, setLoading] = useState(true);
+  const navigate = useNavigate();
+
+  useEffect(() => {
+    dispatch(fetchProfile());
+    dispatch(fetchSessions());
+  }, [dispatch]);
+
+  // Redirect to onboarding if not completed
+  useEffect(() => {
+    if (profile && !profile.onboardingCompleted) {
+      navigate('/onboarding', { replace: true });
+    }
+  }, [profile, navigate]);
 
   useEffect(() => {
     async function loadDashboard() {
@@ -23,7 +41,7 @@ export function Dashboard() {
           api.get('/routines').catch(() => ({ data: { data: [] } })),
         ]);
         setStats({
-          totalWorkouts: 0,
+          totalWorkouts: sessions.filter((s) => s.status === 'completed').length,
           currentStreak: 0,
           longestStreak: 0,
           totalExercises: 64,
@@ -31,7 +49,7 @@ export function Dashboard() {
         });
       } catch {
         setStats({
-          totalWorkouts: 0,
+          totalWorkouts: sessions.filter((s) => s.status === 'completed').length,
           currentStreak: 0,
           longestStreak: 0,
           totalExercises: 64,
@@ -42,7 +60,7 @@ export function Dashboard() {
       }
     }
     loadDashboard();
-  }, []);
+  }, [sessions]);
 
   const greeting = getGreeting();
 
@@ -119,10 +137,10 @@ export function Dashboard() {
             <span className="vf-action-card__label">My Routines</span>
             <span className="vf-action-card__desc">View & manage your routines</span>
           </Link>
-          <Link to="/exercises?muscleGroup=chest" className="vf-action-card">
-            <span className="vf-action-card__icon">🎯</span>
-            <span className="vf-action-card__label">Chest Day</span>
-            <span className="vf-action-card__desc">Filter exercises by chest</span>
+          <Link to="/cardio" className="vf-action-card">
+            <span className="vf-action-card__icon">🏃</span>
+            <span className="vf-action-card__label">Cardio Library</span>
+            <span className="vf-action-card__desc">37 cardio activities</span>
           </Link>
         </div>
       </section>

@@ -11,6 +11,8 @@ import { authRouter } from './routes/auth.js';
 import { exerciseRouter } from './routes/exercises.js';
 import { cardioRouter } from './routes/cardio.js';
 import { routineRouter } from './routes/routines.js';
+import { profileRouter } from './routes/profile.js';
+import { workoutRouter } from './routes/workouts.js';
 
 const app = express();
 const PORT = parseInt(process.env.PORT ?? '8001', 10);
@@ -41,6 +43,8 @@ app.use('/api/auth', authRouter);
 app.use('/api/exercises', exerciseRouter);
 app.use('/api/cardio', cardioRouter);
 app.use('/api/routines', routineRouter);
+app.use('/api/profile', profileRouter);
+app.use('/api/workouts', workoutRouter);
 
 // ─── Error Handler (must be last) ───────────────────────────
 app.use(errorHandler);

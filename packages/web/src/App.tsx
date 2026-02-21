@@ -12,6 +12,8 @@ import { Cardio } from './pages/Cardio';
 import { CardioDetail } from './pages/CardioDetail';
 import { Routines } from './pages/Routines';
 import { RoutineDetail } from './pages/RoutineDetail';
+import { Onboarding } from './pages/Onboarding';
+import { WorkoutExecution } from './pages/WorkoutExecution';
 
 function RequireAuth({ children }: { children: React.ReactNode }) {
   const status = useAppSelector((s) => s.auth.status);
@@ -42,6 +44,8 @@ export function App() {
         <Route path="/register" element={<Register />} />
         <Route path="/routines" element={<RequireAuth><Routines /></RequireAuth>} />
         <Route path="/routines/:id" element={<RequireAuth><RoutineDetail /></RequireAuth>} />
+        <Route path="/onboarding" element={<RequireAuth><Onboarding /></RequireAuth>} />
+        <Route path="/workout/:routineId" element={<RequireAuth><WorkoutExecution /></RequireAuth>} />
       </Route>
     </Routes>
   );
