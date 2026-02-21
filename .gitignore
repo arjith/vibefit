@@ -1,6 +1,11 @@
 node_modules/
 dist/
 *.tsbuildinfo
+*.d.ts
+*.d.ts.map
+*.js.map
+# Don't ignore source .ts → .js in packages that need runtime execution
+!packages/core/drizzle.config.ts
 .env
 .env.local
 .env.*.local
