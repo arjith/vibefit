@@ -1,6 +1,6 @@
 # VibeFit — Implementation Plan & Progress Tracker
 
-> **Status:** 🚧 IN PROGRESS — Phase 3 ✅ + Phase 4.1 ✅ + Phase 4.2 ✅ + Phase 4.5 ✅ + Phase 5.1 ✅ — pushed to GitHub  
+> **Status:** 🚧 IN PROGRESS — Phase 3 ✅ + Phase 4.1 ✅ + Phase 4.2 ✅ + Phase 4.5 ✅ + Phase 5.1 ✅ + Phase 5.2 ✅ — pushed to GitHub  
 > **Last Updated:** 2026-02-22  
 > **Framework:** Jobs-to-Be-Done (JTBD) × Entity State Machines  
 > **Architecture:** pnpm Monorepo → `@vibefit/{shared,ui,core,api,web,ml,agent}`
@@ -114,7 +114,7 @@ ERROR → retry (exp backoff: 1s→2s→4s, max 3) → LOADING
 | # | Task | Status | Depends | Verification |
 |---|------|--------|---------|-------------|
 | 5.1 | Premium tier (Stripe, feature gating, 7-day trial) | ✅ | 0.4,3.5 | Subscribe → unlock → cancel → downgrade |
-| 5.2 | Coach marketplace (trainer programs, revenue share, reviews) | ⬜ | 1.3,4.1 | Upload program → purchase → populates |
+| 5.2 | Coach marketplace (trainer programs, revenue share, reviews) | ✅ | 1.3,4.1 | Upload program → purchase → populates |
 | 5.3 | Enterprise B2B (org accounts, SSO, team challenges, admin) | ⬜ | 4.2,5.1 | Org → invite → team challenge → admin |
 | 5.4 | Agentic infrastructure (Lobster workflows, task queue) | ⬜ | 3.1-3.5 | Workflow: profile → routine → biomech → predict |
 
