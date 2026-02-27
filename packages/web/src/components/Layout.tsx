@@ -25,6 +25,7 @@ export function Layout() {
       { to: '/social', label: 'Social' },
       { to: '/challenges', label: 'Challenges' },
       { to: '/analytics', label: 'Analytics' },
+      { to: '/marketplace', label: 'Marketplace' },
       { to: '/coach', label: 'Coach' },
     ] : []),
   ];

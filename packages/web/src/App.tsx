@@ -21,6 +21,7 @@ import { Coach } from './pages/Coach';
 import { Subscription } from './pages/Subscription';
 import { Social } from './pages/Social';
 import { Challenges } from './pages/Challenges';
+import { Marketplace } from './pages/Marketplace';
 
 function RequireAuth({ children }: { children: React.ReactNode }) {
   const status = useAppSelector((s) => s.auth.status);
@@ -60,6 +61,7 @@ export function App() {
         <Route path="/subscription" element={<RequireAuth><Subscription /></RequireAuth>} />
         <Route path="/social" element={<RequireAuth><Social /></RequireAuth>} />
         <Route path="/challenges" element={<RequireAuth><Challenges /></RequireAuth>} />
+        <Route path="/marketplace" element={<RequireAuth><Marketplace /></RequireAuth>} />
       </Route>
     </Routes>
   );

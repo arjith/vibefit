@@ -417,3 +417,44 @@ export interface AuthResponse {
   user: User;
   tokens: AuthTokens;
 }
+
+// ─── Coach Marketplace ──────────────────────────────────────
+export type ProgramDifficulty = 'beginner' | 'intermediate' | 'advanced';
+export type ProgramCategory =
+  | 'strength'
+  | 'hypertrophy'
+  | 'weight-loss'
+  | 'endurance'
+  | 'powerlifting'
+  | 'bodybuilding'
+  | 'athletic'
+  | 'general';
+
+export interface CoachProgram {
+  id: string;
+  coachId: string;
+  coachName?: string;
+  name: string;
+  description: string;
+  price: number;
+  durationWeeks: number;
+  difficulty: ProgramDifficulty;
+  category: ProgramCategory;
+  rating: number;
+  reviewCount: number;
+  enrollmentCount: number;
+  isPublished: boolean;
+  routineId: string | null;
+  createdAt: string;
+  updatedAt: string;
+}
+
+export interface ProgramReview {
+  id: string;
+  programId: string;
+  userId: string;
+  userName?: string;
+  rating: number;
+  comment: string | null;
+  createdAt: string;
+}

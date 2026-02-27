@@ -21,6 +21,7 @@ import { coachRouter } from './routes/coach.js';
 import { subscriptionRouter } from './routes/subscription.js';
 import { socialRouter } from './routes/social.js';
 import { challengeRouter } from './routes/challenges.js';
+import { marketplaceRouter } from './routes/marketplace.js';
 
 const app = express();
 const PORT = parseInt(process.env.PORT ?? '8001', 10);
@@ -61,6 +62,7 @@ app.use('/api/coach', coachRouter);
 app.use('/api/subscription', subscriptionRouter);
 app.use('/api/social', socialRouter);
 app.use('/api/challenges', challengeRouter);
+app.use('/api/marketplace', marketplaceRouter);
 
 // ─── Error Handler (must be last) ───────────────────────────
 app.use(errorHandler);
