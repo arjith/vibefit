@@ -23,6 +23,7 @@ export function Layout() {
     ...(isAuth ? [
       { to: '/routines', label: 'Routines' },
       { to: '/social', label: 'Social' },
+      { to: '/challenges', label: 'Challenges' },
       { to: '/analytics', label: 'Analytics' },
       { to: '/coach', label: 'Coach' },
     ] : []),

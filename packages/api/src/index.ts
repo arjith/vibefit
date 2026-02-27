@@ -20,6 +20,7 @@ import { recapRouter } from './routes/recaps.js';
 import { coachRouter } from './routes/coach.js';
 import { subscriptionRouter } from './routes/subscription.js';
 import { socialRouter } from './routes/social.js';
+import { challengeRouter } from './routes/challenges.js';
 
 const app = express();
 const PORT = parseInt(process.env.PORT ?? '8001', 10);
@@ -59,6 +60,7 @@ app.use('/api/recaps', recapRouter);
 app.use('/api/coach', coachRouter);
 app.use('/api/subscription', subscriptionRouter);
 app.use('/api/social', socialRouter);
+app.use('/api/challenges', challengeRouter);
 
 // ─── Error Handler (must be last) ───────────────────────────
 app.use(errorHandler);
